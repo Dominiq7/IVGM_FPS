@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-@onready var gunRay = $Head/Camera3d/RayCast3d as RayCast3D
+@onready var povRay = $Head/Camera3d/RayCast3d as RayCast3D
 @onready var Cam = $Head/Camera3d as Camera3D
 @export var _bullet_scene : PackedScene
 var mouseSensibility = 1200
@@ -14,7 +14,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _ready():
 	#Captures mouse and stops rgun from hitting yourself
-	gunRay.add_exception(self)
+	povRay.add_exception(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 func _physics_process(delta):
 	# Add the gravity.
@@ -36,6 +36,10 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+	
+	# Handle Ability
+	if Input.is_action_just_pressed("Ability"):
+		cast_spell()
 
 	move_and_slide()
 
@@ -48,12 +52,22 @@ func _input(event):
 		mouse_relative_y = clamp(event.relative.y, -50, 10)
 
 func shoot():
-	if not gunRay.is_colliding():
+	if not povRay.is_colliding():
 		return
 	var bulletInst = _bullet_scene.instantiate() as Node3D
 	bulletInst.set_as_top_level(true)
 	get_parent().add_child(bulletInst)
-	bulletInst.global_transform.origin = gunRay.get_collision_point() as Vector3
-	bulletInst.look_at((gunRay.get_collision_point()+gunRay.get_collision_normal()),Vector3.BACK)
-	print(gunRay.get_collision_point())
-	print(gunRay.get_collision_point()+gunRay.get_collision_normal())
+	bulletInst.global_transform.origin = povRay.get_collision_point() as Vector3
+	bulletInst.look_at((povRay.get_collision_point()+povRay.get_collision_normal()),Vector3.BACK)
+	print(povRay.get_collision_point())
+	print(povRay.get_collision_point()+povRay.get_collision_normal())
+
+func cast_spell():
+	if not povRay.is_colliding():
+		return
+	
+	var selectedObject = povRay.get_collider()
+	print(selectedObject.get_class())
+	if selectedObject != null and selectedObject.get_class() == "RigidBody3D":
+		selectedObject.set_is_lifting(true)
+	

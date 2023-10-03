@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctahsvj88g1om"]
+[gd_scene load_steps=9 format=3 uid="uid://ctahsvj88g1om"]
 
 [ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="1_n8f5l"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4f1y1"]
 [ext_resource type="Texture2D" uid="uid://cgp4mvev1cbra" path="res://addons/devblocks/textures/purple/texture_01.png" id="3_k7mu6"]
+[ext_resource type="PackedScene" uid="uid://byrxmwc4h2vhj" path="res://Scenes/MovableObjects/crate.tscn" id="4_6mygy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6g5uc"]
 
@@ -62,3 +63,15 @@ material = SubResource("StandardMaterial3D_2gtf0")
 transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 4, -13.0662, 2.84246, -1.36987)
 block_color_group = 1
 block_style = 2
+
+[node name="Crate" parent="." instance=ExtResource("4_6mygy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -5)
+
+[node name="Crate2" parent="." instance=ExtResource("4_6mygy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, -8)
+
+[node name="Crate3" parent="." instance=ExtResource("4_6mygy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.75, 1, -8)
+
+[node name="Crate4" parent="." instance=ExtResource("4_6mygy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 2, -8)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://byrxmwc4h2vhj"]
+
+[ext_resource type="Script" path="res://Scenes/MovableObjects/crate.gd" id="1_ou3xw"]
+[ext_resource type="ArrayMesh" uid="uid://c5q4w71lslwgj" path="res://addons/kenney_textures/crate.obj" id="2_ot6fm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6di40"]
+
+[node name="Crate" type="RigidBody3D"]
+gravity_scale = 0.0
+script = ExtResource("1_ou3xw")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_6di40")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -0.5, 0)
+mesh = ExtResource("2_ot6fm")
+
+[node name="LiftTimer" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="timeout" from="LiftTimer" to="." method="_on_lift_timer_timeout"]

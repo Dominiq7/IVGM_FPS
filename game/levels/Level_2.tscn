@@ -1,8 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctahsvj88g1om"]
+[gd_scene load_steps=8 format=3 uid="uid://c61ndhylxbdsq"]
 
-[ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="1_eisjc"]
-[ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="1_ujgwk"]
-[ext_resource type="Texture2D" uid="uid://cgp4mvev1cbra" path="res://addons/devblocks/textures/purple/texture_01.png" id="3_m1rsk"]
+[ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="1_irf1i"]
+[ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_xanv7"]
+[ext_resource type="Texture2D" uid="uid://cgp4mvev1cbra" path="res://addons/devblocks/textures/purple/texture_01.png" id="3_hfpxh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6g5uc"]
 
@@ -15,7 +15,7 @@ background_color = Color(0.2139, 0.570975, 0.69, 1)
 sky = SubResource("Sky_ivwug")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2gtf0"]
-albedo_texture = ExtResource("3_m1rsk")
+albedo_texture = ExtResource("3_hfpxh")
 uv1_scale = Vector3(3, 3, 3)
 uv1_triplanar = true
 
@@ -24,12 +24,12 @@ uv1_triplanar = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_l5pxq")
 
-[node name="BasicBlock4" parent="." instance=ExtResource("1_ujgwk")]
+[node name="BasicBlock4" parent="." instance=ExtResource("1_irf1i")]
 transform = Transform3D(9.10803, 0, 0, 0, 1, 0, 0, 0, 9, 6.49497, 2.07954, -31.5179)
 block_color_group = 1
 block_style = 2
 
-[node name="Player" parent="." instance=ExtResource("1_eisjc")]
+[node name="Player" parent="." instance=ExtResource("2_xanv7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 
 [node name="DirectionalLight3d" type="DirectionalLight3D" parent="."]
@@ -39,15 +39,15 @@ light_indirect_energy = 0.884
 light_volumetric_fog_energy = 0.768
 shadow_enabled = true
 
-[node name="BasicBlock3" parent="." instance=ExtResource("1_ujgwk")]
+[node name="BasicBlock3" parent="." instance=ExtResource("1_irf1i")]
 transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 30, 12.0086, 2.95161, -0.0307474)
 block_color_group = 3
 block_style = 2
 
-[node name="BasicBlock" parent="." instance=ExtResource("1_ujgwk")]
+[node name="BasicBlock" parent="." instance=ExtResource("1_irf1i")]
 transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0)
 
-[node name="BasicBlock2" parent="." instance=ExtResource("1_ujgwk")]
+[node name="BasicBlock2" parent="." instance=ExtResource("1_irf1i")]
 transform = Transform3D(6.981, 0, 0, 0, 1, 0, 0, 0, 4.093, 5.58332, 0.908197, -22.4728)
 block_color_group = 1
 block_style = 2
@@ -58,7 +58,7 @@ use_collision = true
 polygon = PackedVector2Array(0, 0, 0, 1, 0, 1, 1, 0)
 material = SubResource("StandardMaterial3D_2gtf0")
 
-[node name="BasicBlock5" parent="." instance=ExtResource("1_ujgwk")]
+[node name="BasicBlock5" parent="." instance=ExtResource("1_irf1i")]
 transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 4, -13.0662, 2.84246, -1.36987)
 block_color_group = 1
 block_style = 2

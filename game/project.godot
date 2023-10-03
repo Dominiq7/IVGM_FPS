@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="G4fps"
-run/main_scene="res://levels/node_3d.tscn"
+run/main_scene="res://levels/Level_Testing.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 
 [autoload]

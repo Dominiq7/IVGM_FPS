@@ -27,5 +27,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.468479, -0.463024)
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0, -0.00588068, 0.463024)
 target_position = Vector3(60, 0, 0)
 
-[node name="scene" parent="Head/Camera3d" instance=ExtResource("3_h4mn2")]
-transform = Transform3D(0.015, 0, 0, 0, 0.00319315, 0.0146562, 0, -0.0146562, 0.00319315, 0.134893, -0.130229, -0.126191)
+[node name="magic_wand" parent="Head/Camera3d" instance=ExtResource("3_h4mn2")]
+transform = Transform3D(-0.0146591, -0.000478852, -0.00314327, 0.00294226, 0.00357793, -0.0142668, 0.00120521, -0.0145592, -0.0034027, 0.182391, -0.295269, 0.211049)

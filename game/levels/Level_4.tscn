@@ -1,8 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://cvybeqpc1lqmi"]
+[gd_scene load_steps=13 format=3 uid="uid://cvybeqpc1lqmi"]
 
 [ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="1_kkil4"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_11frm"]
-[ext_resource type="Texture2D" uid="uid://cgp4mvev1cbra" path="res://addons/devblocks/textures/purple/texture_01.png" id="3_hiwet"]
+[ext_resource type="Texture2D" uid="uid://bb26jcgwhbrbi" path="res://textures/stone.jpg" id="2_vq6fh"]
+[ext_resource type="PackedScene" uid="uid://dwjv4wyshgtps" path="res://Scenes/Level_4/wall_thin.tscn" id="3_aau4b"]
+[ext_resource type="PackedScene" uid="uid://c8st001abpnud" path="res://Scenes/Level_4/wall_door.tscn" id="3_lkg8x"]
+[ext_resource type="PackedScene" uid="uid://dg27qs3xkdqtm" path="res://Scenes/Level_4/wall_corner_half_tower.tscn" id="6_s3cmu"]
+[ext_resource type="PackedScene" uid="uid://dkd200jvo5f2w" path="res://Scenes/Level_4/wall.tscn" id="7_jsjyx"]
+[ext_resource type="PackedScene" uid="uid://byrxmwc4h2vhj" path="res://Scenes/MovableObjects/crate.tscn" id="8_l1jde"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6g5uc"]
 
@@ -14,23 +19,17 @@ background_mode = 2
 background_color = Color(0.2139, 0.570975, 0.69, 1)
 sky = SubResource("Sky_ivwug")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2gtf0"]
-albedo_texture = ExtResource("3_hiwet")
-uv1_scale = Vector3(3, 3, 3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yr3wd"]
+albedo_texture = ExtResource("2_vq6fh")
 uv1_triplanar = true
 
-[node name="Node3d" type="Node3D"]
+[node name="Level_4" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_l5pxq")
 
-[node name="BasicBlock4" parent="." instance=ExtResource("1_kkil4")]
-transform = Transform3D(9.10803, 0, 0, 0, 1, 0, 0, 0, 9, 6.49497, 2.07954, -31.5179)
-block_color_group = 1
-block_style = 2
-
 [node name="Player" parent="." instance=ExtResource("2_11frm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 83.1287)
 
 [node name="DirectionalLight3d" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.966349, 0.250904, -0.0567091, 0.182362, -0.512743, 0.838951, 0.181419, -0.821061, -0.541244, -0.00693703, 59.5145, -109.348)
@@ -39,26 +38,36 @@ light_indirect_energy = 0.884
 light_volumetric_fog_energy = 0.768
 shadow_enabled = true
 
-[node name="BasicBlock3" parent="." instance=ExtResource("1_kkil4")]
-transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 30, 12.0086, 2.95161, -0.0307474)
-block_color_group = 3
-block_style = 2
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0)
+material_override = SubResource("StandardMaterial3D_yr3wd")
+size = Vector3(100, 1, 200)
 
 [node name="BasicBlock" parent="." instance=ExtResource("1_kkil4")]
-transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0)
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 200, 0, 0, 0)
 
-[node name="BasicBlock2" parent="." instance=ExtResource("1_kkil4")]
-transform = Transform3D(6.981, 0, 0, 0, 1, 0, 0, 0, 4.093, 5.58332, 0.908197, -22.4728)
-block_color_group = 1
-block_style = 2
+[node name="map" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 45.4603)
 
-[node name="CsgPolygon3d" type="CSGPolygon3D" parent="."]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.06623, 0.523835, 0.0135)
-use_collision = true
-polygon = PackedVector2Array(0, 0, 0, 1, 0, 1, 1, 0)
-material = SubResource("StandardMaterial3D_2gtf0")
+[node name="wallDoor" parent="map" instance=ExtResource("3_lkg8x")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 0, 24.9118)
 
-[node name="BasicBlock5" parent="." instance=ExtResource("1_kkil4")]
-transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 4, -13.0662, 2.84246, -1.36987)
-block_color_group = 1
-block_style = 2
+[node name="wallCornerHalfTower2" parent="map" instance=ExtResource("6_s3cmu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.9854, 0, 19.9098)
+
+[node name="wallCornerHalfTower" parent="map" instance=ExtResource("6_s3cmu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.972, 0, 20.0549)
+
+[node name="wall" parent="map" instance=ExtResource("3_aau4b")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.92455, 0, 29.8092)
+
+[node name="wall3" parent="map" instance=ExtResource("7_jsjyx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9954, 0, 20.3003)
+
+[node name="wall2" parent="map" instance=ExtResource("3_aau4b")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.8808, 0, 29.8092)
+
+[node name="objects" type="Node3D" parent="."]
+
+[node name="Crate" parent="objects" instance=ExtResource("8_l1jde")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.48952, 1.40542, 81.9038)

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://7fljkd1svlcb"
+path="res://.godot/imported/towerSquarePoles.obj-34da83d6b82717b15826f5ca5d478101.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerSquarePoles.obj-34da83d6b82717b15826f5ca5d478101.mesh"]
+
+source_file="res://addons/Castle_Kit/towerSquarePoles.obj"
+dest_files=["res://.godot/imported/towerSquarePoles.obj-34da83d6b82717b15826f5ca5d478101.mesh", "res://.godot/imported/towerSquarePoles.obj-34da83d6b82717b15826f5ca5d478101.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

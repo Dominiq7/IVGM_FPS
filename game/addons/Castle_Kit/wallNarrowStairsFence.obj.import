@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://8q2yvgayt3ar"
+path="res://.godot/imported/wallNarrowStairsFence.obj-f4e812236d9d79186bb1bba7a8edac43.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallNarrowStairsFence.obj-f4e812236d9d79186bb1bba7a8edac43.mesh"]
+
+source_file="res://addons/Castle_Kit/wallNarrowStairsFence.obj"
+dest_files=["res://.godot/imported/wallNarrowStairsFence.obj-f4e812236d9d79186bb1bba7a8edac43.mesh", "res://.godot/imported/wallNarrowStairsFence.obj-f4e812236d9d79186bb1bba7a8edac43.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6fwmq44doxkh"
+path="res://.godot/imported/towerSquareTopColor.obj-186b00a61a511d73a0273d8c7b1f5cf2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerSquareTopColor.obj-186b00a61a511d73a0273d8c7b1f5cf2.mesh"]
+
+source_file="res://addons/Castle_Kit/towerSquareTopColor.obj"
+dest_files=["res://.godot/imported/towerSquareTopColor.obj-186b00a61a511d73a0273d8c7b1f5cf2.mesh", "res://.godot/imported/towerSquareTopColor.obj-186b00a61a511d73a0273d8c7b1f5cf2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

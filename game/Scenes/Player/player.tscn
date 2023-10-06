@@ -8,7 +8,7 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_6b3ky"]
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_1w47b")
 _bullet_scene = ExtResource("2_je25s")
 

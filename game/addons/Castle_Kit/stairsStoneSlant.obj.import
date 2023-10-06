@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvb7hhgwqb5mw"
+path="res://.godot/imported/stairsStoneSlant.obj-c128ab3fb4e3e7ea5393798d99bc173b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stairsStoneSlant.obj-c128ab3fb4e3e7ea5393798d99bc173b.mesh"]
+
+source_file="res://addons/Castle_Kit/stairsStoneSlant.obj"
+dest_files=["res://.godot/imported/stairsStoneSlant.obj-c128ab3fb4e3e7ea5393798d99bc173b.mesh", "res://.godot/imported/stairsStoneSlant.obj-c128ab3fb4e3e7ea5393798d99bc173b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

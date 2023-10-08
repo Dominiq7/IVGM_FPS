@@ -21,11 +21,11 @@ mesh = SubResource("CapsuleMesh_6b3ky")
 [node name="Head" type="Node3D" parent="."]
 
 [node name="Camera3d" type="Camera3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.468479, -0.463024)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.468479, -0.509478)
+
+[node name="scene" parent="Head/Camera3d" instance=ExtResource("3_h4mn2")]
+transform = Transform3D(0.0146464, -0.00153334, -0.00285153, 0.00311669, 0.00309996, 0.0143414, -0.000876707, -0.0145959, 0.00334549, 0.179103, -0.280401, 0.26463)
 
 [node name="RayCast3d" type="RayCast3D" parent="Head/Camera3d"]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0, -0.00588068, 0.463024)
 target_position = Vector3(60, 0, 0)
-
-[node name="magic_wand" parent="Head/Camera3d" instance=ExtResource("3_h4mn2")]
-transform = Transform3D(-0.0146591, -0.000478852, -0.00314327, 0.00294226, 0.00357793, -0.0142668, 0.00120521, -0.0145592, -0.0034027, 0.182391, -0.295269, 0.211049)

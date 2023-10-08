@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvq5ny22pda5j"]
+
+[ext_resource type="ArrayMesh" uid="uid://dhx8a7h4n6wmx" path="res://addons/Castle_Kit/wallNarrow.obj" id="1_573pi"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ab4yq"]
+points = PackedVector3Array(1.19469, 12.6499, 0, 1.69489, 13.1, -2.5, -5.28802e-13, 12.6499, 0, 5, 11.7997, 0, 1.69489, 13.1, -10, -5.28802e-13, 13.1, -2.5, -5.28802e-13, 0, 0, 5, 0, 0, 5, 11.7997, -10, -5.28802e-13, 13.1, -10, -5.28802e-13, 0, -10, 5, 0, -10)
+
+[node name="Wall_narrow" type="StaticBody3D"]
+
+[node name="WallNarrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_573pi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_ab4yq")

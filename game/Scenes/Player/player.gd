@@ -8,7 +8,7 @@ var mouse_relative_x = 0
 var mouse_relative_y = 0
 var speed
 const WALK_SPEED = 5.0
-const SPRINT_SPEED = 10.0
+const SPRINT_SPEED = 20.0
 const JUMP_VELOCITY = 4.5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.

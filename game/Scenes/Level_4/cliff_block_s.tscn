@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://blqkbttkgvpdv"]
+
+[ext_resource type="ArrayMesh" uid="uid://b3djaviww5pg6" path="res://addons/kenney_nature-kit/cliff_blockQuarter_stone.obj" id="1_eck1u"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gyfw5"]
+points = PackedVector3Array(-0.5, 0, -0.5, -0.5, 0.25, -0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 0.25, 0.5, 0.5, 0.25, -0.5, 0.5, 0, 0.5, 0.5, 0.25, 0.5)
+
+[node name="cliff_block_s" type="StaticBody3D"]
+
+[node name="CliffBlockQuarterStone" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, 0, 0)
+mesh = ExtResource("1_eck1u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_gyfw5")

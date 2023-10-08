@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh1q67emarvxp"]
+
+[ext_resource type="ArrayMesh" uid="uid://nurfijowp5ly" path="res://addons/kenney_nature-kit/cliff_top_stone.obj" id="1_yipux"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mqnc0"]
+points = PackedVector3Array(0.5, 1, -0.331504, 0.5, 0.899961, -0.2315, 0.5, 1, -0.5, -0.5, 1, -0.331504, 0.5, 0, -0.331504, -0.5, 0.899961, -0.2315, 0.5, 0, -0.5, -0.5, 1, -0.5, -0.5, 0, -0.331504, -0.5, 0, -0.5)
+
+[node name="cliff_top" type="StaticBody3D"]
+
+[node name="CliffTopStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_yipux")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_mqnc0")

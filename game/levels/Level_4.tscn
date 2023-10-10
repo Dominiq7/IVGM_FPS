@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://b5gbilro6yswq"]
+[gd_scene load_steps=34 format=3 uid="uid://b5gbilro6yswq"]
 
 [ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="1_kkil4"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_11frm"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://c8c3qeb5xe56t" path="res://Scenes/Level_4/cliff_slope.tscn" id="21_yhei7"]
 [ext_resource type="PackedScene" uid="uid://8ddp3plocres" path="res://Scenes/Level_4/cliff_slope_2.tscn" id="22_4vnjx"]
 [ext_resource type="PackedScene" uid="uid://dartvkhk5aqq" path="res://Scenes/portal.tscn" id="24_0ykb4"]
+[ext_resource type="ArrayMesh" uid="uid://c8srlbhlwqmdp" path="res://addons/Castle_Kit/metalGate.obj" id="24_uvyo1"]
 [ext_resource type="PackedScene" uid="uid://bty5sxrf0owjp" path="res://Scenes/Level_4/tower_3.tscn" id="24_v0v67"]
 [ext_resource type="PackedScene" uid="uid://d1l7wb3b2gkni" path="res://Scenes/Level_4/Bridge2.tscn" id="25_be1ht"]
 [ext_resource type="PackedScene" uid="uid://cvdlih7qax4g0" path="res://Scenes/Level_4/endingtower.tscn" id="26_y6tko"]
@@ -46,6 +47,9 @@ albedo_texture = ExtResource("3_2w08k")
 albedo_texture = ExtResource("2_vq6fh")
 uv1_scale = Vector3(50, 50, 50)
 uv1_triplanar = true
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_l4wqg"]
+points = PackedVector3Array(-0.200001, 7.30069, 6.62151, -0.514479, 7.30069, 6.62151, 0, 6.37667, 6.62151, -0.200001, 7.30069, 0, -0.514479, 7.30069, 0, -0.71441, 6.37667, 6.62151, 0, 6.37667, 0, 0, 1.80445, 6.62151, -0.71441, 6.37667, 0, -0.71441, 1.80445, 6.62151, 0, 1.80445, 0, -0.200001, 0.899723, 6.62151, -0.289652, 0, 6.53142, -0.71441, 1.80445, 0, -0.424828, 0, 6.53142, -0.514479, 0.899723, 6.62151, -0.289652, 0, 0.0894448, -0.200001, 0.899723, 0, -0.514479, 0.899723, 0, -0.424828, 0, 0.0894448)
 
 [node name="Level_4" type="Node3D"]
 
@@ -318,6 +322,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05017, 1.0269, 52.0465)
 [node name="Crate7" parent="objects" instance=ExtResource("14_fykop")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.01139, 2.17173, 54.9768)
 
+[node name="Crate" parent="objects" instance=ExtResource("8_l1jde")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.577923, 7.71078, -34.4017)
+
 [node name="map3" type="Node3D" parent="."]
 
 [node name="wallDoor" parent="map3" instance=ExtResource("3_lkg8x")]
@@ -498,8 +505,20 @@ transform = Transform3D(-1.14693e-07, -4.23834e-08, -3.636, -1.45443, 1.74924, 0
 [node name="Wall_narrow11" parent="map3" instance=ExtResource("14_qo3ru")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 32.5552, 7.03191, -88.431)
 
+[node name="MetalGate" type="MeshInstance3D" parent="map3"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 10.5864, 8.27145, -33.427)
+mesh = ExtResource("24_uvyo1")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="map3"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 10.5864, 8.27145, -33.427)
+shape = SubResource("ConvexPolygonShape3D_l4wqg")
+
 [node name="cliff_step" parent="map3" instance=ExtResource("14_m8bt3")]
 transform = Transform3D(0.315055, 0, -4.99612, 0, 6, 0, 7.99379, 0, 0.196909, -42.0533, 9.46926, -91.2524)
+
+[node name="cliff_step2" parent="map3" instance=ExtResource("14_m8bt3")]
+transform = Transform3D(-3.49691e-07, 0, 5, 0, 6, 0, -8, 0, -2.18557e-07, 48.6803, 9.46926, -91.2524)
 
 [node name="map4" type="Node3D" parent="."]
 

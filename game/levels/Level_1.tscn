@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://d3o82ssdsc5f4"]
+[gd_scene load_steps=9 format=3 uid="uid://d3o82ssdsc5f4"]
 
 [ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="1_4qibv"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_civq4"]
 [ext_resource type="Texture2D" uid="uid://cgp4mvev1cbra" path="res://addons/devblocks/textures/purple/texture_01.png" id="3_xn7ts"]
+[ext_resource type="PackedScene" uid="uid://dot3n7bgslqss" path="res://Scenes/healthBar/Healthbar.tscn" id="4_prlg1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6g5uc"]
 
@@ -31,6 +32,8 @@ block_style = 2
 
 [node name="Player" parent="." instance=ExtResource("2_civq4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="healthbar2" parent="Player" instance=ExtResource("4_prlg1")]
 
 [node name="DirectionalLight3d" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.966349, 0.250904, -0.0567091, 0.182362, -0.512743, 0.838951, 0.181419, -0.821061, -0.541244, -0.00693703, 59.5145, -109.348)

@@ -67,7 +67,6 @@ func cast_spell():
 		return
 	
 	var selectedObject = povRay.get_collider()
-	print(selectedObject.get_class())
-	if selectedObject != null and selectedObject.get_class() == "RigidBody3D":
+	if selectedObject != null and selectedObject.get_groups().has("Liftable"):
 		selectedObject.set_is_lifting(true)
 	

@@ -8,7 +8,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,15 +18,12 @@ func _process(delta):
 func _physics_process(delta):
 	
 	if is_lifting:
-#		var lift_force = Vector3(0, 30, 0)
-		linear_velocity.y = 0
-	
-		if position.y > 3:
-			print("------in pos 3")
-			apply_impulse(Vector3(0, 0.1, 0))
-		else:
-			linear_velocity.y = 3
+		apply_central_force(Vector3.UP * 3)
+		
+		if $LiftTimer.time_left < 8.5:
+			linear_velocity.y = 0
 	else:
+#		freeze = false
 		linear_velocity.y -= gravity * delta
 
 

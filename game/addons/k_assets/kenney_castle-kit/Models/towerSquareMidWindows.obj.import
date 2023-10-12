@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b2t24m4lo2cb1"
+path="res://.godot/imported/towerSquareMidWindows.obj-6cf02290abfdedc2e2f696315b9b0e95.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerSquareMidWindows.obj-6cf02290abfdedc2e2f696315b9b0e95.mesh"]
+
+source_file="res://addons/k_assets/kenney_castle-kit/Models/towerSquareMidWindows.obj"
+dest_files=["res://.godot/imported/towerSquareMidWindows.obj-6cf02290abfdedc2e2f696315b9b0e95.mesh", "res://.godot/imported/towerSquareMidWindows.obj-6cf02290abfdedc2e2f696315b9b0e95.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

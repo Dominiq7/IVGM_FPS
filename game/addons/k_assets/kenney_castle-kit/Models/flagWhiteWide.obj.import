@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bphsv0peiwjhy"
+path="res://.godot/imported/flagWhiteWide.obj-ed99f517b7c641e231f7da599d4b56cc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flagWhiteWide.obj-ed99f517b7c641e231f7da599d4b56cc.mesh"]
+
+source_file="res://addons/k_assets/kenney_castle-kit/Models/flagWhiteWide.obj"
+dest_files=["res://.godot/imported/flagWhiteWide.obj-ed99f517b7c641e231f7da599d4b56cc.mesh", "res://.godot/imported/flagWhiteWide.obj-ed99f517b7c641e231f7da599d4b56cc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

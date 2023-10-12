@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://7ld2j8o4ou5p"
+path="res://.godot/imported/Roof_Slant_Green_01.obj-aa333a2f9d86560c2eb4acd01b023f22.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Roof_Slant_Green_01.obj-aa333a2f9d86560c2eb4acd01b023f22.mesh"]
+
+source_file="res://addons/k_assets/kenney_medieval-town-base/Models/Roof_Slant_Green_01.obj"
+dest_files=["res://.godot/imported/Roof_Slant_Green_01.obj-aa333a2f9d86560c2eb4acd01b023f22.mesh", "res://.godot/imported/Roof_Slant_Green_01.obj-aa333a2f9d86560c2eb4acd01b023f22.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

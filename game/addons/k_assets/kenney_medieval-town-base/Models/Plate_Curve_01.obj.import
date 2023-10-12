@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://48hlex1i1c26"
+path="res://.godot/imported/Plate_Curve_01.obj-7ec4a5f62c6f05d3bce21bfee205dbae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Plate_Curve_01.obj-7ec4a5f62c6f05d3bce21bfee205dbae.mesh"]
+
+source_file="res://addons/k_assets/kenney_medieval-town-base/Models/Plate_Curve_01.obj"
+dest_files=["res://.godot/imported/Plate_Curve_01.obj-7ec4a5f62c6f05d3bce21bfee205dbae.mesh", "res://.godot/imported/Plate_Curve_01.obj-7ec4a5f62c6f05d3bce21bfee205dbae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

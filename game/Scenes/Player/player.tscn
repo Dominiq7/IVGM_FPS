@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="PackedScene" uid="uid://dbduds4bsaaby" path="res://Scenes/Bullet/Bullet.tscn" id="2_je25s"]
-[ext_resource type="PackedScene" uid="uid://sk1ebajcdf11" path="res://textures/magic_wand/scene.gltf" id="3_h4mn2"]
+[ext_resource type="PackedScene" uid="uid://bxyqvvup58wac" path="res://Scenes/Player/magic_wand.tscn" id="3_7gu7j"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
 
@@ -23,9 +23,8 @@ mesh = SubResource("CapsuleMesh_6b3ky")
 [node name="Camera3d" type="Camera3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.468479, -0.509478)
 
-[node name="scene" parent="Head/Camera3d" instance=ExtResource("3_h4mn2")]
-transform = Transform3D(0.0146464, -0.00153334, -0.00285153, 0.00311669, 0.00309996, 0.0143414, -0.000876707, -0.0145959, 0.00334549, 0.179103, -0.280401, 0.26463)
+[node name="wand" parent="Head/Camera3d" instance=ExtResource("3_7gu7j")]
+transform = Transform3D(0.01, 0, 0, 0, 0.00404934, 0.00914346, 0, -0.00914346, 0.00404934, 0.124749, -0.344296, -0.048385)
 
-[node name="RayCast3d" type="RayCast3D" parent="Head/Camera3d"]
-transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0, -0.00588068, 0.463024)
-target_position = Vector3(60, 0, 0)
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3d"]
+target_position = Vector3(0, 0, -5)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://b5gbilro6yswq"]
+[gd_scene load_steps=35 format=3 uid="uid://b5gbilro6yswq"]
 
 [ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="1_kkil4"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_11frm"]
@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://bty5sxrf0owjp" path="res://Scenes/Level_4/tower_3.tscn" id="24_v0v67"]
 [ext_resource type="PackedScene" uid="uid://d1l7wb3b2gkni" path="res://Scenes/Level_4/Bridge2.tscn" id="25_be1ht"]
 [ext_resource type="PackedScene" uid="uid://cvdlih7qax4g0" path="res://Scenes/Level_4/endingtower.tscn" id="26_y6tko"]
+[ext_resource type="PackedScene" uid="uid://bup3d4qgtyk2s" path="res://Scenes/Level_4/npc_king.tscn" id="28_nwcjm"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6g5uc"]
 
@@ -57,7 +58,7 @@ points = PackedVector3Array(-0.200001, 7.30069, 6.62151, -0.514479, 7.30069, 6.6
 environment = SubResource("Environment_l5pxq")
 
 [node name="Player" parent="." instance=ExtResource("2_11frm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0831575, 3.78583, 99.7451)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0831575, 3.71096, 58.7466)
 
 [node name="DirectionalLight3d" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.966349, 0.250904, -0.0567091, 0.182362, -0.512743, 0.838951, 0.181419, -0.821061, -0.541244, -0.00693703, 229.214, -231.713)
@@ -930,3 +931,6 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.341137, 20.8443, -205.229)
 
 [node name="ending" parent="." instance=ExtResource("26_y6tko")]
 transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 18.3285, 17.7201, -208.984)
+
+[node name="king" parent="." instance=ExtResource("28_nwcjm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.316689, 20.6558, -200.965)

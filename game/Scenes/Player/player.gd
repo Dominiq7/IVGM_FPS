@@ -16,6 +16,32 @@ func _ready():
 	#Captures mouse and stops rgun from hitting yourself
 	povRay.add_exception(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	$Ability/Icon.visible = true
+	$Ability/CooldownTimerLabel.visible = false
+	$Ability.modulate = Color(1, 1, 1, 1)
+	$Ability/CooldownTimerLabel.modulate = Color(1, 1, 1, 0.5)
+	
+func _process(delta):
+	
+	# If ability not on cooldown
+	if $Ability/CooldownTimer.is_stopped():
+		$Ability/Outline.modulate = Color(1, 1, 1, 1)
+		$Ability/Icon.visible = true
+		$Ability/CooldownTimerLabel.visible = false
+	else:
+		$Ability/Outline.modulate = Color(1, 1, 1, 0.5)
+		$Ability/Icon.visible = false
+		$Ability/CooldownTimerLabel.visible = true
+		
+		# Ability cooldown timer display
+		var int_time_left = int(round($Ability/CooldownTimer.time_left))
+		$Ability/CooldownTimerLabel.text = "%s" % (int_time_left+1)
+	
+	if not $Ability/FlashRedTimer.is_stopped():
+		$Ability.modulate = Color(0.878, 0.267, 0.36, 1)
+	else:
+		$Ability.modulate = Color(1, 1, 1, 1)
+		
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -63,10 +89,19 @@ func shoot():
 	print(povRay.get_collision_point()+povRay.get_collision_normal())
 
 func cast_spell():
+	
+	# If ability is on cooldown prevent ability from being used
+	if not $Ability/CooldownTimer.is_stopped():
+		$Ability/FlashRedTimer.start()
+		return
+	
 	if not povRay.is_colliding():
+		$Ability/FlashRedTimer.start()
 		return
 	
 	var selectedObject = povRay.get_collider()
 	if selectedObject != null and selectedObject.get_groups().has("Liftable"):
 		selectedObject.set_is_lifting(true)
-	
+		$Ability/CooldownTimer.start()
+	else:
+		$Ability/FlashRedTimer.start()

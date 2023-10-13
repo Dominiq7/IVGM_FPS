@@ -99,7 +99,7 @@ func cast_spell():
 		selectedObject.set_is_lifting(true)
 		
 		
-func hit(dir):
+func hit(dir):# player is attacked
 	emit_signal("player_hit")
 	velocity += dir * HIT_STAGGER
 	if velocity.length() > SPRINT_SPEED:

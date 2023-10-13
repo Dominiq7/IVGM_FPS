@@ -9,6 +9,11 @@ const ATTACK_RANGE = 5.0
 
 @export var player_path :NodePath # change it to your level player
 @onready var anim_tree = $AnimationTree
+@onready var enemy_barrel = $RayCast3D
+
+# Bullets
+var bullet2 = load("res://Scenes/Bullet/Bullet2.tscn")
+var instance
 
 func _ready():
 	player = get_node(player_path)
@@ -22,18 +27,28 @@ func _process(delta):
 				
 				"Bite_Front":
 					look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
+					# Handle Shooting
+					instance = bullet2.instantiate()
+					instance.position = enemy_barrel.global_position
+					instance.transform.basis = enemy_barrel.global_transform.basis
+					get_parent().add_child(instance)
+	
+	
+	
 		
 		# Conditions
 		anim_tree.set("parameters/conditions/attack2", _target_in_range())
 		anim_tree.set("parameters/conditions/stay2", !_target_in_range())
 		
 		move_and_slide()
+		
+	
 	
 	
 func _target_in_range():
 	return global_position.distance_to(player.global_position) < ATTACK_RANGE
 	
-func _hit_finished():
+func _hit_finished():# this need to change to bullet2 collide palyer body,then player.hit(dir)
 	if global_position.distance_to(player.global_position) < ATTACK_RANGE + 1.0:
 		var dir = global_position.direction_to(player.global_position)
 		player.hit(dir)

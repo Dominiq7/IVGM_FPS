@@ -5,7 +5,9 @@ var player = null
 var state_machine
 var health = 4
 
-const ATTACK_RANGE = 5.0
+const ATTACK_RANGE = 10.0
+
+signal monster_hit
 
 @export var player_path :NodePath # change it to your level player
 @onready var anim_tree = $AnimationTree
@@ -24,14 +26,15 @@ func _process(delta):
 	if global_position.distance_to(player.global_position) < ATTACK_RANGE:
 	
 		match state_machine.get_current_node():
-				
-				"Bite_Front":
-					look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
-					# Handle Shooting
-					instance = bullet2.instantiate()
-					instance.position = enemy_barrel.global_position
-					instance.transform.basis = enemy_barrel.global_transform.basis
-					get_parent().add_child(instance)
+			"Idle":
+				look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
+			"Bite_Front":
+				look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
+				# Handle Shooting
+				instance = bullet2.instantiate()
+				instance.position = enemy_barrel.global_position
+				instance.transform.basis = enemy_barrel.global_transform.basis
+				get_parent().add_child(instance)
 	
 	
 	

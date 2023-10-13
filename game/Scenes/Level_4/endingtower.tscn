@@ -41,6 +41,8 @@ points = PackedVector3Array(0.208751, 7.55951, 0.208425, 0.208751, 7.55951, -0.2
 points = PackedVector3Array(0.4, 0.5, 3.15, 0.4, 0.5, -3.15, 0, 0.5, 3.15, 0.4, -4.65673, 3.15, 0, 0.5, -3.15, 0.4, -4.65673, -3.15, 0, -4.65673, 3.15, 0.4, -7.3, 0, 0, -4.65673, -3.15, 0, -7.3, 0)
 
 [node name="tower_end" type="StaticBody3D"]
+collision_layer = 3
+collision_mask = 3
 
 [node name="TowerSquare" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -2.20243, 40.3121, 2.26777)

@@ -26,6 +26,8 @@ points = PackedVector3Array(0.208753, 7.55951, 0.2088, 0.39912, 6.99357, -3.0443
 points = PackedVector3Array(0.4, 0.5, 3.15, 0.4, 0.5, -3.15, 0, 0.5, 3.15, 0.4, -4.65673, 3.15, 0, 0.5, -3.15, 0.4, -4.65673, -3.15, 0, -4.65673, 3.15, 0.4, -7.3, 0, 0, -4.65673, -3.15, 0, -7.3, 0)
 
 [node name="tower_3" type="StaticBody3D"]
+collision_layer = 3
+collision_mask = 3
 
 [node name="TowerSquareBaseColor" type="MeshInstance3D" parent="."]
 mesh = ExtResource("1_1obrq")

@@ -13,6 +13,10 @@ var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 20.0
 const JUMP_VELOCITY = 4.5
+const HIT_STAGGER = 8.0
+
+# signal
+signal player_hit
 
 # Bullets
 var bullet = load("res://Scenes/Bullet/Bullet.tscn")
@@ -93,4 +97,11 @@ func cast_spell():
 	print(selectedObject.get_class())
 	if selectedObject != null and selectedObject.get_class() == "RigidBody3D":
 		selectedObject.set_is_lifting(true)
+		
+		
+func hit(dir):
+	emit_signal("player_hit")
+	velocity += dir * HIT_STAGGER
+	if velocity.length() > SPRINT_SPEED:
+		velocity = velocity.normalized() * SPRINT_SPEED
 	

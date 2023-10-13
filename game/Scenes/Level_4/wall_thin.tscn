@@ -66,6 +66,8 @@ shadow_mesh = SubResource("ArrayMesh_01p64")
 points = PackedVector3Array(-0.1, 0, -1.08287e-16, -9.78261e-06, 0, -1.08287e-16, -0.1, 0, 0.0999902, -0.1, 0.126499, -1.08287e-16, -9.78261e-06, 0, 0.0999902, -9.78261e-06, 0.126499, -1.08287e-16, -0.1, 0.131, 0.0999902, -0.1, 0.131, 0.0249902, -9.78261e-06, 0.131, 0.0999902, -9.78261e-06, 0.131, 0.0249902)
 
 [node name="wall" type="StaticBody3D"]
+collision_layer = 3
+collision_mask = 3
 
 [node name="wall" type="MeshInstance3D" parent="."]
 transform = Transform3D(-50, 1.22465e-14, 8.74228e-06, 6.12323e-15, 100, 1.22465e-14, -4.37114e-06, 1.22465e-14, -100, 0, 0, 0)

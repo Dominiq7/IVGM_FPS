@@ -15,6 +15,8 @@ points = PackedVector3Array(0.508333, 0.158293, 0.558276, -0.474444, -1.38778e-1
 points = PackedVector3Array(-0.490747, 0.00919711, -0.5, 0.490804, 0.00919711, -0.5, 0.490804, 0.990803, -0.5, -0.483675, 0.983731, -0.290439, -0.499943, 5.55112e-17, -0.0290086, 0.5, 4.68069e-07, -0.0290089, -0.508276, 0.758247, -0.0417482, -0.490747, 0.990803, -0.5, 0.483776, 0.983775, -0.290441, 0.508333, 0.758247, -0.0417482)
 
 [node name="cliff_step" type="StaticBody3D"]
+collision_layer = 3
+collision_mask = 3
 
 [node name="CliffStepsStone" type="MeshInstance3D" parent="."]
 mesh = ExtResource("1_sep36")

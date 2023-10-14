@@ -1,11 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://7gv6q50fuutj"]
-[gd_scene load_steps=6 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="PackedScene" uid="uid://dbduds4bsaaby" path="res://Scenes/Bullet/Bullet.tscn" id="2_je25s"]
 [ext_resource type="Texture2D" uid="uid://d1bjtevd5bi8x" path="res://addons/kenney_textures/card_lift.png" id="3_auxs4"]
 [ext_resource type="Texture2D" uid="uid://bm64665i4tady" path="res://addons/kenney_textures/environment_15.png" id="4_punx2"]
-[ext_resource type="PackedScene" uid="uid://dot3n7bgslqss" path="res://Scenes/healthBar/Healthbar.tscn" id="3_6gctj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
 
@@ -83,5 +81,3 @@ one_shot = true
 [node name="FlashRedTimer" type="Timer" parent="Ability"]
 wait_time = 0.15
 one_shot = true
-
-[node name="healthbar" parent="." instance=ExtResource("3_6gctj")]

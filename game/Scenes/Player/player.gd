@@ -3,19 +3,16 @@ extends CharacterBody3D
 @onready var povRay = $Head/Camera3d/RayCast3d as RayCast3D
 @onready var Cam = $Head/Camera3d as Camera3D
 @export var _bullet_scene : PackedScene
-
 var mouseSensibility = 1200
 var mouse_relative_x = 0
 var mouse_relative_y = 0
-const SPEED = 10.0
-const JUMP_VELOCITY = 10
+const SPEED = 5.0
+const JUMP_VELOCITY = 4.5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _ready():
-	
-		
 	#Captures mouse and stops rgun from hitting yourself
 	povRay.add_exception(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -46,10 +43,6 @@ func _process(delta):
 		$Ability.modulate = Color(1, 1, 1, 1)
 		
 func _physics_process(delta):
-	
-	if Input.is_action_just_pressed("restart_level_R"):
-		playerDied()
-	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
@@ -109,11 +102,6 @@ func cast_spell():
 	var selectedObject = povRay.get_collider()
 	if selectedObject != null and selectedObject.get_groups().has("Liftable"):
 		selectedObject.set_is_lifting(true)
-################################################################################
-#new function: Player died, u can call this func to make new condition/function to make the player dies like Leaving the designated zone
-func playerDied():
-	get_tree().reload_current_scene()
-################################################################################
 		$Ability/CooldownTimer.start()
 	else:
 		$Ability/FlashRedTimer.start()

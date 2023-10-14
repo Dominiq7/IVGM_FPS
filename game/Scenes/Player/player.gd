@@ -105,16 +105,6 @@ func shoot():
 		bulletInstance.position = gun_barrel.global_position
 		bulletInstance.transform.basis = gun_barrel.global_transform.basis
 		get_parent().add_child(bulletInstance)
-	
-#	if not povRay.is_colliding():
-#		return
-#	var bulletInst = _bullet_scene.instantiate() as Node3D
-#	bulletInst.set_as_top_level(true)
-#	get_parent().add_child(bulletInst)
-#	bulletInst.global_transform.origin = povRay.get_collision_point() as Vector3
-#	bulletInst.look_at((povRay.get_collision_point()+povRay.get_collision_normal()),Vector3.BACK)
-#	print(povRay.get_collision_point())
-#	print(povRay.get_collision_point()+povRay.get_collision_normal())
 
 func cast_spell():
 	

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b7yja5u6ifw4u"
+path="res://.godot/imported/towerSquareBaseColor.obj-0921e15466151c5ef69cd2ca022a8bb2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerSquareBaseColor.obj-0921e15466151c5ef69cd2ca022a8bb2.mesh"]
+
+source_file="res://addons/k_assets/k_scenes/tower/towerSquareBaseColor.obj"
+dest_files=["res://.godot/imported/towerSquareBaseColor.obj-0921e15466151c5ef69cd2ca022a8bb2.mesh", "res://.godot/imported/towerSquareBaseColor.obj-0921e15466151c5ef69cd2ca022a8bb2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

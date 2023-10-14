@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clmsu60bcbrpk"
+path="res://.godot/imported/Castle_Wall_01.obj-aa63b61d61bb0eee9d71c197bdff441a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Castle_Wall_01.obj-aa63b61d61bb0eee9d71c197bdff441a.mesh"]
+
+source_file="res://addons/k_assets/kenney_medieval-town-base/Models/Castle_Wall_01.obj"
+dest_files=["res://.godot/imported/Castle_Wall_01.obj-aa63b61d61bb0eee9d71c197bdff441a.mesh", "res://.godot/imported/Castle_Wall_01.obj-aa63b61d61bb0eee9d71c197bdff441a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

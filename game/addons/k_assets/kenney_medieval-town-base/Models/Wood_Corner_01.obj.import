@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bfsmi5cmkgld1"
+path="res://.godot/imported/Wood_Corner_01.obj-e35ba25bc5e4e40219111733ef296dbd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Wood_Corner_01.obj-e35ba25bc5e4e40219111733ef296dbd.mesh"]
+
+source_file="res://addons/k_assets/kenney_medieval-town-base/Models/Wood_Corner_01.obj"
+dest_files=["res://.godot/imported/Wood_Corner_01.obj-e35ba25bc5e4e40219111733ef296dbd.mesh", "res://.godot/imported/Wood_Corner_01.obj-e35ba25bc5e4e40219111733ef296dbd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

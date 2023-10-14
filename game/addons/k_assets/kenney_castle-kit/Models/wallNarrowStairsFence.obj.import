@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://2misk64124oj"
+path="res://.godot/imported/wallNarrowStairsFence.obj-e24cbc5e88056ad2a51fd9468e6d397c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallNarrowStairsFence.obj-e24cbc5e88056ad2a51fd9468e6d397c.mesh"]
+
+source_file="res://addons/k_assets/kenney_castle-kit/Models/wallNarrowStairsFence.obj"
+dest_files=["res://.godot/imported/wallNarrowStairsFence.obj-e24cbc5e88056ad2a51fd9468e6d397c.mesh", "res://.godot/imported/wallNarrowStairsFence.obj-e24cbc5e88056ad2a51fd9468e6d397c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://b41ahc2ujucq1"]
+
+[ext_resource type="Texture2D" uid="uid://cpl5urea61ss3" path="res://textures/wooden-plank-textured-background-material.jpg" id="1_d53ck"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a45bj"]
+albedo_color = Color(0.643137, 0.54902, 0.364706, 1)
+albedo_texture = ExtResource("1_d53ck")
+
+[sub_resource type="BoxMesh" id="BoxMesh_nkkhs"]
+lightmap_size_hint = Vector2i(59, 66)
+material = SubResource("StandardMaterial3D_a45bj")
+size = Vector3(10, 1, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vd6qx"]
+points = PackedVector3Array(5, 0.5, 0.5, 5, 0.5, -0.5, -5, 0.5, 0.5, 5, -0.5, 0.5, 5, -0.5, -0.5, -5, 0.5, -0.5, -5, -0.5, 0.5, -5, -0.5, -0.5)
+
+[node name="stair_2" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_nkkhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_vd6qx")

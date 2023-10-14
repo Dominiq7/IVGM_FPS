@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg27qs3xkdqtm"]
+
+[ext_resource type="ArrayMesh" uid="uid://bjpfrcqld6n4c" path="res://addons/Castle_Kit/wallCornerHalfTower.obj" id="1_kd42h"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_c4brj"]
+points = PackedVector3Array(0, -5.41434e-15, -6.89435e-12, 0, -5.41434e-15, 9.99902, 0, 11.7997, -6.89435e-12, 9.99902, -5.41434e-15, -6.89435e-12, 0, 13.1, 9.99902, 7.5, -5.41434e-15, 14.329, 0, 13.1, 8.30462, 8.30462, 13.1, -6.89435e-12, 9.99902, 13.1, -6.89435e-12, 14.329, -5.41434e-15, 7.5, 7.5, 13.1, 14.329, 8.70546, -5.41434e-15, 14.8282, 14.329, 13.1, 7.5, 14.8282, -5.41434e-15, 8.70546, 8.70546, 13.1, 14.8282, 9.99902, -5.41434e-15, 15, 14.8282, 13.1, 8.70546, 15, -5.41434e-15, 9.99902, 9.99902, 13.1, 15, 11.294, -5.41434e-15, 14.8282, 15, 13.1, 9.99902, 14.8282, -5.41434e-15, 11.294, 11.294, 13.1, 14.8282, 12.4995, -5.41434e-15, 14.329, 14.8282, 13.1, 11.294, 14.329, -5.41434e-15, 12.4995, 12.4995, 13.1, 14.329, 13.5347, -5.41434e-15, 13.5347, 14.329, 13.1, 12.4995, 13.5347, 13.1, 13.5347)
+
+[node name="wallCornerHalfTower" type="StaticBody3D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="WallCornerHalfTower" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_kd42h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_c4brj")

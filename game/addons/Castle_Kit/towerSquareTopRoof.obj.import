@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c8iihfjbrl54l"
+path="res://.godot/imported/towerSquareTopRoof.obj-d38b3f62d38ee697a348486f8d6fe197.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerSquareTopRoof.obj-d38b3f62d38ee697a348486f8d6fe197.mesh"]
+
+source_file="res://addons/Castle_Kit/towerSquareTopRoof.obj"
+dest_files=["res://.godot/imported/towerSquareTopRoof.obj-d38b3f62d38ee697a348486f8d6fe197.mesh", "res://.godot/imported/towerSquareTopRoof.obj-d38b3f62d38ee697a348486f8d6fe197.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

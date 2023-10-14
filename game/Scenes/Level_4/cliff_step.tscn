@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqwlmnqoo013x"]
+
+[ext_resource type="ArrayMesh" uid="uid://bt05obrujaap1" path="res://addons/kenney_nature-kit/cliff_steps_stone.obj" id="1_sep36"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rykgf"]
+points = PackedVector3Array(0.508333, 0.558306, 0.158333, -0.5, 0.426538, -0.0234972, -0.462112, 0.6, -0.016665, -0.508333, 0.541654, 0.158333, 0.5, 0.426538, -0.0234972, 0.508333, 0.425036, 0.108319, 0.462112, 0.6, -0.016665, -0.508333, 0.608333, 0.108319, -0.508333, 0.425036, 0.108319, 0.508333, 0.608333, 0.108319, -0.508333, 0.558306, 0.158333, 0.508333, 0.541654, 0.158333)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xaf7f"]
+points = PackedVector3Array(0.508333, 0.358314, 0.358333, -0.5, 0.243169, -0.0218207, -0.5, 0.423497, -0.0218207, -0.508333, 0.341642, 0.358333, 0.5, 0.243169, -0.0218207, 0.508333, 0.241667, 0.308283, 0.5, 0.423497, -0.0218207, -0.508333, 0.408311, 0.308283, -0.508333, 0.241667, 0.308283, 0.508333, 0.408311, 0.308283, 0.508333, 0.425, 0.108381, -0.508333, 0.425, 0.108381, -0.508333, 0.358314, 0.358333, 0.508333, 0.341642, 0.358333)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_b4sfl"]
+points = PackedVector3Array(0.508333, 0.158293, 0.558276, -0.474444, -1.38778e-17, -0.00555745, -0.5, 0.239617, -0.020219, -0.508333, 0.158293, 0.558276, 0.5, 0.239617, -0.020219, 0.508333, -0.00833333, 0.508262, 0.474444, -1.38778e-17, -0.00555745, -0.508333, -0.00833333, 0.508262, 0.508333, 0.241667, 0.30826, -0.508333, 0.208288, 0.508262, -0.508333, 0.241667, 0.30826, 0.508333, 0.208288, 0.508262, 0.508333, 0.141628, 0.558276, -0.508333, 0.141628, 0.558276)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cr21b"]
+points = PackedVector3Array(-0.490747, 0.00919711, -0.5, 0.490804, 0.00919711, -0.5, 0.490804, 0.990803, -0.5, -0.483675, 0.983731, -0.290439, -0.499943, 5.55112e-17, -0.0290086, 0.5, 4.68069e-07, -0.0290089, -0.508276, 0.758247, -0.0417482, -0.490747, 0.990803, -0.5, 0.483776, 0.983775, -0.290441, 0.508333, 0.758247, -0.0417482)
+
+[node name="cliff_step" type="StaticBody3D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CliffStepsStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_sep36")
+
+[node name="@CollisionShape3D@128366" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_rykgf")
+
+[node name="@CollisionShape3D@128365" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_xaf7f")
+
+[node name="@CollisionShape3D@128364" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_b4sfl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_cr21b")

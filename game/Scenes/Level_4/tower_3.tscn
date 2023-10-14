@@ -1,0 +1,76 @@
+[gd_scene load_steps=13 format=3 uid="uid://bty5sxrf0owjp"]
+
+[ext_resource type="ArrayMesh" uid="uid://dpaeris653yh7" path="res://addons/Castle_Kit/towerSquareBaseColor.obj" id="1_1obrq"]
+[ext_resource type="ArrayMesh" uid="uid://fuhsw2752jvi" path="res://addons/Castle_Kit/towerSquareMidWindows.obj" id="2_m7r7j"]
+[ext_resource type="ArrayMesh" uid="uid://dfwesiwpwogam" path="res://addons/Castle_Kit/towerSquareRoof.obj" id="3_i1jlq"]
+[ext_resource type="ArrayMesh" uid="uid://drt0wdw7rlg5" path="res://addons/Castle_Kit/towerSquareTopColor.obj" id="4_8ktff"]
+[ext_resource type="ArrayMesh" uid="uid://dwuj6cwl4ccij" path="res://addons/Castle_Kit/flagBlue.obj" id="5_br5b6"]
+[ext_resource type="ArrayMesh" uid="uid://dq0cpgoxjyyjr" path="res://addons/Castle_Kit/flagBannerShort.obj" id="6_ot20e"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0hx7a"]
+points = PackedVector3Array(-10, 0, 0, -10, 0, 10, -10, 2.79984, 0, 0, 0, 0, 0, 0, 10, -10, 2.79984, 10, 0, 2.79984, 0, -9.65055, 10.1, 0.349452, 0, 2.79984, 10, -9.65055, 10.1, 9.64957, -0.35043, 10.1, 0.349452, -0.35043, 10.1, 9.64957)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_35qgm"]
+points = PackedVector3Array(-0.35091, 10.1, 8.95, -0.35091, 10.1, -0.35, -9.65, 10.1, 8.95, -0.35091, 5.41434e-15, 8.95, -9.65, 10.1, -0.35, -0.35091, 5.41434e-15, -0.35, -9.65, 5.41434e-15, 8.95, -9.65, 5.41434e-15, -0.35)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yxh17"]
+points = PackedVector3Array(-10, 0, 0, 0, 0, 0, -10, 0, 10, -10, 13.0996, 0, 0, 0, 10, 0, 13.0996, 0, -10, 13.0996, 10, -5.35337, 20.098, 4.64663, 0, 13.0996, 10, -4.64761, 20.098, 4.64663, -5.35337, 20.098, 5.35239, -4.64761, 20.098, 5.35239)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2hneb"]
+points = PackedVector3Array(-10, 1.79994, -1.80478e-15, -9.65055, 0, 0.349452, -10, 1.79994, 10, -10, 3.79963, -1.80478e-15, 0, 1.79994, -1.80478e-15, -9.65055, 0, 9.64957, -0.35043, 0, 0.349452, -10, 3.79963, 10, 0, 1.79994, 10, 0, 3.79963, -1.80478e-15, -0.35043, 0, 9.64957, 0, 3.79963, 10)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lsg52"]
+points = PackedVector3Array(0.208753, 7.55951, 0.2088, 0.39912, 6.99357, -3.04438, 0.387239, 7.04086, -2.89218, 0.208753, 7.55951, -0.209224, 0.0751519, 7.92, 0.0751143, -0.20886, 7.55951, 0.2088, 0.143976, 0, 0.143499, 0.392608, 5.94388, -3.04438, 0.387239, 6.94628, -3.19657, -9.53674e-06, 6.74394, -5.044, 0.0751519, 7.92, -0.0755386, -0.0751709, 7.92, 0.0751143, -0.485214, 7.24398, -0.994881, -0.441121, 7.24398, -0.799495, -0.441121, 5.74386, -0.799495, -0.144084, 0, 0.143499, 0.143976, 0, -0.144438, 0.38099, 5.98186, -3.19606, 0.346314, 6.01908, -3.34517, -0.144084, 0, -0.144438, -0.0931252, 6.70518, -4.96533, -0.0832679, 6.74394, -4.96585, -0.0751709, 7.92, -0.0755386, -0.5, 7.24398, -1.19438, -0.485214, 5.74386, -0.994881, -0.5, 5.74386, -1.19438, -0.319489, 6.44624, -4.44293, -0.309984, 6.50283, -4.55708, -0.281821, 6.55865, -4.66865, -0.235527, 6.61137, -4.7756, -0.172159, 6.66099, -4.87535, -0.154029, 6.74394, -4.87587, -0.441121, 7.24398, -1.58927, -0.485214, 7.24398, -1.39388, -0.210708, 6.74394, -4.77663, -0.252073, 6.74394, -4.66968, -0.277332, 6.74394, -4.55811)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wxnbc"]
+points = PackedVector3Array(0.4, 0.5, 3.15, 0.4, 0.5, -3.15, 0, 0.5, 3.15, 0.4, -4.65673, 3.15, 0, 0.5, -3.15, 0.4, -4.65673, -3.15, 0, -4.65673, 3.15, 0.4, -7.3, 0, 0, -4.65673, -3.15, 0, -7.3, 0)
+
+[node name="tower_3" type="StaticBody3D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="TowerSquareBaseColor" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_1obrq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_0hx7a")
+
+[node name="TowerSquareMidWindows" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.95559, 0.646953)
+mesh = ExtResource("2_m7r7j")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.95559, 0.646953)
+shape = SubResource("ConvexPolygonShape3D_35qgm")
+
+[node name="TowerSquareRoof" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.999921, -0.012566, 0, 0.012566, 0.999921, 0, 21.8813, 0)
+mesh = ExtResource("3_i1jlq")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.999921, -0.012566, 0, 0.012566, 0.999921, 0, 21.8813, 0)
+shape = SubResource("ConvexPolygonShape3D_yxh17")
+
+[node name="TowerSquareTopColor" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 19.9647, 0)
+mesh = ExtResource("4_8ktff")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 19.9647, 0)
+shape = SubResource("ConvexPolygonShape3D_2hneb")
+
+[node name="FlagBlue" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.06707, 38.2462, 5.23937)
+mesh = ExtResource("5_br5b6")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.06707, 38.2462, 5.23937)
+shape = SubResource("ConvexPolygonShape3D_lsg52")
+
+[node name="FlagBannerShort" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.240927, 31.7672, 4.94327)
+mesh = ExtResource("6_ot20e")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.240927, 31.7672, 4.94327)
+shape = SubResource("ConvexPolygonShape3D_wxnbc")

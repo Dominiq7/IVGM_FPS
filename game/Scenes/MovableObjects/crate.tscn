@@ -5,7 +5,7 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6di40"]
 
-[node name="Crate" type="RigidBody3D"]
+[node name="Crate" type="RigidBody3D" groups=["Liftable"]]
 gravity_scale = 0.0
 script = ExtResource("1_ou3xw")
 metadata/_edit_group_ = true
@@ -19,5 +19,6 @@ mesh = ExtResource("2_ot6fm")
 
 [node name="LiftTimer" type="Timer" parent="."]
 wait_time = 10.0
+one_shot = true
 
 [connection signal="timeout" from="LiftTimer" to="." method="_on_lift_timer_timeout"]

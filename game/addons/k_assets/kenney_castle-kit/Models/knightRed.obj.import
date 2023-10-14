@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnt1ycw1wdu2u"
+path="res://.godot/imported/knightRed.obj-2d390f0032721a8210e620247dd077fc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/knightRed.obj-2d390f0032721a8210e620247dd077fc.mesh"]
+
+source_file="res://addons/k_assets/kenney_castle-kit/Models/knightRed.obj"
+dest_files=["res://.godot/imported/knightRed.obj-2d390f0032721a8210e620247dd077fc.mesh", "res://.godot/imported/knightRed.obj-2d390f0032721a8210e620247dd077fc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

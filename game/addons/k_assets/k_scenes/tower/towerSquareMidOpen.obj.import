@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://od7whf7td1hs"
+path="res://.godot/imported/towerSquareMidOpen.obj-e8af631a58c339a0cb1065867f5f184e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerSquareMidOpen.obj-e8af631a58c339a0cb1065867f5f184e.mesh"]
+
+source_file="res://addons/k_assets/k_scenes/tower/towerSquareMidOpen.obj"
+dest_files=["res://.godot/imported/towerSquareMidOpen.obj-e8af631a58c339a0cb1065867f5f184e.mesh", "res://.godot/imported/towerSquareMidOpen.obj-e8af631a58c339a0cb1065867f5f184e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

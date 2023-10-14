@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cau1cyj845dlm"
+path="res://.godot/imported/wallDoor.obj-2824a7152aa808455df39dd26bfc708c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallDoor.obj-2824a7152aa808455df39dd26bfc708c.mesh"]
+
+source_file="res://addons/k_assets/kenney_castle-kit/Models/wallDoor.obj"
+dest_files=["res://.godot/imported/wallDoor.obj-2824a7152aa808455df39dd26bfc708c.mesh", "res://.godot/imported/wallDoor.obj-2824a7152aa808455df39dd26bfc708c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

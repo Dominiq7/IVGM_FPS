@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7bkp3i34sgyq"]
+
+[ext_resource type="Texture2D" uid="uid://bvx8505pxor3s" path="res://addons/k_assets/kenney_retro-medieval-kit/Isometric/wallFortified_SW.png" id="1_dn7y7"]
+[ext_resource type="ArrayMesh" uid="uid://bckve45g2pjd6" path="res://addons/k_assets/kenney_castle-kit/Models/wallNarrowCorner.obj" id="2_v24d6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_russv"]
+albedo_color = Color(0.439216, 0, 0.113725, 1)
+albedo_texture = ExtResource("1_dn7y7")
+emission_enabled = true
+emission = Color(2.37647, 0.235294, 7.10196, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pdvfr"]
+points = PackedVector3Array(0, 0.16219, -5, 0, 0.16219, -0.00952387, 0, 12.9378, -0.00952387, 5, 0.137809, 0, 4.99048, 11.7398, -5, 0, 12.5376, -5, 4.99048, 0.16219, -5, 5, 12.5605, -4.44089e-16, 1.76758, 13.204, -2.60806, 2.59853, 13.204, -1.77711)
+
+[node name="wallcorner" type="StaticBody3D"]
+
+[node name="WallNarrowCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -1.49275, 0, 3.21535)
+material_override = SubResource("StandardMaterial3D_russv")
+mesh = ExtResource("2_v24d6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -1.49275, 0, 3.21535)
+shape = SubResource("ConvexPolygonShape3D_pdvfr")

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bmvkan5mmp7ln"
+path="res://.godot/imported/towerSquareTopRoof.obj-ec879cde17072a603a7fd7d01147b7b9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerSquareTopRoof.obj-ec879cde17072a603a7fd7d01147b7b9.mesh"]
+
+source_file="res://addons/k_assets/k_scenes/tower/towerSquareTopRoof.obj"
+dest_files=["res://.godot/imported/towerSquareTopRoof.obj-ec879cde17072a603a7fd7d01147b7b9.mesh", "res://.godot/imported/towerSquareTopRoof.obj-ec879cde17072a603a7fd7d01147b7b9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

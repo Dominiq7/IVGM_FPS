@@ -979,3 +979,4 @@ offset_bottom = 728.0
 color = Color(1, 0.054902, 0, 0.337255)
 
 [connection signal="player_hit" from="Player" to="." method="_on_player_player_hit"]
+[connection signal="player_hit2" from="Player" to="." method="_on_player_player_hit_2"]

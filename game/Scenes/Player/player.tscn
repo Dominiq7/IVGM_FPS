@@ -1,14 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=7 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="PackedScene" uid="uid://dbduds4bsaaby" path="res://Scenes/Bullet/Bullet.tscn" id="2_je25s"]
 [ext_resource type="PackedScene" uid="uid://bxyqvvup58wac" path="res://Scenes/Player/magic_wand.tscn" id="3_7gu7j"]
+[ext_resource type="Script" path="res://Scenes/healthBar/Healthbar.gd" id="4_ovw1k"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_6b3ky"]
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
+collision_layer = 5
+collision_mask = 5
 script = ExtResource("1_1w47b")
 _bullet_scene = ExtResource("2_je25s")
 
@@ -28,3 +31,44 @@ transform = Transform3D(0.01, 0, 0, 0, 0.00404934, 0.00914346, 0, -0.00914346, 0
 
 [node name="RayCast3D" type="RayCast3D" parent="Head/Camera3d"]
 target_position = Vector3(0, 0, -2)
+
+[node name="healthbar" type="Node2D" parent="."]
+
+[node name="Control" type="Control" parent="healthbar"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 548.0
+offset_bottom = 178.0
+
+[node name="ProgressBar" type="ProgressBar" parent="healthbar/Control"]
+modulate = Color(0.929412, 0, 0.243137, 1)
+self_modulate = Color(1, 0.0117647, 0, 1)
+layout_mode = 0
+offset_left = 111.0
+offset_top = 23.0
+offset_right = 452.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.0862745, 0.0862745, 0.0862745, 1)
+theme_override_colors/font_outline_color = Color(0.835294, 0, 0, 1)
+theme_override_constants/outline_size = 0
+max_value = 1000.0
+step = 1.0
+value = 1000.0
+rounded = true
+script = ExtResource("4_ovw1k")
+
+[node name="Label" type="Label" parent="healthbar/Control"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 17.0
+offset_right = 81.0
+offset_bottom = 43.0
+scale = Vector2(1.4, 1.4)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.878431, 0.301961, 0.294118, 1)
+theme_override_colors/font_outline_color = Color(0.741176, 0, 0, 1)
+text = "Health"
+
+[connection signal="player_hit" from="." to="healthbar/Control/ProgressBar" method="_on_player_player_hit"]
+[connection signal="player_hit2" from="." to="healthbar/Control/ProgressBar" method="_on_player_player_hit_2"]

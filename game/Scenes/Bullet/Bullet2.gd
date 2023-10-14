@@ -1,9 +1,11 @@
 extends Node3D
-const SPEED = 40.0
+const SPEED = 60.0
 
 @onready var mesh = $MeshInstance3D
 @onready var ray = $RayCast3D
 @onready var particles = $GPUParticles3D
+
+var player = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,10 +20,10 @@ func _process(delta):
 		particles.emitting = true
 		ray.enabled = false
 		if ray.get_collider().is_in_group("Player"):
-			ray.get_collider().hit()
+			ray.get_collider().hit2()
 		await get_tree().create_timer(1.0).timeout
 		queue_free()
-
+		
 
 func _on_timer_timeout():
 	queue_free()

@@ -1,10 +1,11 @@
 extends CharacterBody3D
 
-@onready var povRay = $Head/Camera3d/RayCast3d as RayCast3D
+@onready var povRay = $Head/Camera3d/RayCast3D as RayCast3D
 @onready var Cam = $Head/Camera3d as Camera3D
 @export var _bullet_scene : PackedScene
 @onready var gun_anim =$Head/Camera3d/wand/AnimationPlayer
 @onready var gun_barrel = $Head/Camera3d/wand/RayCast3D
+
 
 var mouseSensibility = 1200
 var mouse_relative_x = 0
@@ -17,6 +18,7 @@ const HIT_STAGGER = 8.0
 
 # signal
 signal player_hit
+signal player_hit2
 
 # Bullets
 var bullet = load("res://Scenes/Bullet/Bullet.tscn")
@@ -99,9 +101,19 @@ func cast_spell():
 		selectedObject.set_is_lifting(true)
 		
 		
-func hit(dir):# player is attacked
+func hit(dir):# player is attacked by melee enemy
 	emit_signal("player_hit")
 	velocity += dir * HIT_STAGGER
 	if velocity.length() > SPRINT_SPEED:
 		velocity = velocity.normalized() * SPRINT_SPEED
+		
+func hit2():# player is attacked by ranged enemy
+	emit_signal("player_hit2")
+
+		
+################################################################################
+#new function: Player died, u can call this func to make new condition/function to make the player dies like Leaving the designated zone
+func playerDied():
+	get_tree().reload_current_scene()
+################################################################################
 	

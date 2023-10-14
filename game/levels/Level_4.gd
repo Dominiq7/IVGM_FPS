@@ -16,3 +16,9 @@ func _on_player_player_hit():# player is attacked, view become red
 	hit_rect.visible = true
 	await get_tree().create_timer(0.2).timeout
 	hit_rect.visible = false
+
+
+func _on_player_player_hit_2():
+	hit_rect.visible = true
+	await get_tree().create_timer(0.2).timeout
+	hit_rect.visible = false 

@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=8 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_1w47b"]
-[ext_resource type="PackedScene" uid="uid://dbduds4bsaaby" path="res://Scenes/Bullet/Bullet.tscn" id="2_je25s"]
 [ext_resource type="PackedScene" uid="uid://bxyqvvup58wac" path="res://Scenes/Player/magic_wand.tscn" id="3_7gu7j"]
-[ext_resource type="Script" path="res://Scenes/healthBar/Healthbar.gd" id="4_ovw1k"]
 [ext_resource type="Texture2D" uid="uid://d1bjtevd5bi8x" path="res://addons/kenney_textures/card_lift.png" id="3_auxs4"]
+[ext_resource type="Script" path="res://Scenes/healthBar/Healthbar.gd" id="4_ovw1k"]
 [ext_resource type="Texture2D" uid="uid://bm64665i4tady" path="res://addons/kenney_textures/environment_15.png" id="4_punx2"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
@@ -14,7 +13,6 @@
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 collision_layer = 2
 script = ExtResource("1_1w47b")
-_bullet_scene = ExtResource("2_je25s")
 
 [node name="CollisionShape3d" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_emkox")
@@ -25,12 +23,12 @@ mesh = SubResource("CapsuleMesh_6b3ky")
 [node name="Head" type="Node3D" parent="."]
 
 [node name="Camera3d" type="Camera3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.468479, -0.509478)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.468479, -0.463024)
 
 [node name="wand" parent="Head/Camera3d" instance=ExtResource("3_7gu7j")]
 transform = Transform3D(0.01, 0, 0, 0, 0.00404934, 0.00914346, 0, -0.00914346, 0.00404934, 0.124749, -0.344296, -0.048385)
 
-[node name="RayCast3DFromDev" type="RayCast3D" parent="Head/Camera3d"]
+[node name="RayCast3d" type="RayCast3D" parent="Head/Camera3d"]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0, -0.00588068, 0.463024)
 target_position = Vector3(60, 0, 0)
 
@@ -61,9 +59,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = 547.0
-offset_top = 520.0
+offset_top = 525.0
 offset_right = 675.0
-offset_bottom = 648.0
+offset_bottom = 653.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.5, 0.5)
@@ -86,9 +84,6 @@ one_shot = true
 [node name="FlashRedTimer" type="Timer" parent="Ability"]
 wait_time = 0.15
 one_shot = true
-
-[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3d"]
-target_position = Vector3(0, 0, -2)
 
 [node name="healthbar" type="Node2D" parent="."]
 

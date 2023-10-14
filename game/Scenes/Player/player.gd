@@ -1,20 +1,19 @@
 extends CharacterBody3D
 
-@onready var povRay = $Head/Camera3d/RayCast3D as RayCast3D
+@onready var povRay = $Head/Camera3d/RayCast3d as RayCast3D
 @onready var Cam = $Head/Camera3d as Camera3D
-@export var _bullet_scene : PackedScene
 @onready var gun_anim =$Head/Camera3d/wand/AnimationPlayer
 @onready var gun_barrel = $Head/Camera3d/wand/RayCast3D
 
+const WALK_SPEED = 5.0
+const SPRINT_SPEED = 10.0
+const JUMP_VELOCITY = 4.5
+const HIT_STAGGER = 8.0
 
 var mouseSensibility = 1200
 var mouse_relative_x = 0
 var mouse_relative_y = 0
-var speed
-const WALK_SPEED = 5.0
-const SPRINT_SPEED = 20.0
-const JUMP_VELOCITY = 4.5
-const HIT_STAGGER = 8.0
+var speed = WALK_SPEED
 
 # signal
 signal player_hit
@@ -22,7 +21,6 @@ signal player_hit2
 
 # Bullets
 var bullet = load("res://Scenes/Bullet/Bullet.tscn")
-var instance
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -74,13 +72,7 @@ func _physics_process(delta):
 	
 	# Handle Shooting
 	if Input.is_action_just_pressed("Shoot"):
-#		shoot()
-		if !gun_anim.is_playing():
-			gun_anim.play("shoot")
-			instance = bullet.instantiate()
-			instance.position = gun_barrel.global_position
-			instance.transform.basis = gun_barrel.global_transform.basis
-			get_parent().add_child(instance)
+		shoot()
 			
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir = Input.get_vector("moveLeft", "moveRight", "moveUp", "moveDown")
@@ -106,7 +98,14 @@ func _input(event):
 		mouse_relative_x = clamp(event.relative.x, -50, 50)
 		mouse_relative_y = clamp(event.relative.y, -50, 10)
 
-#func shoot():
+func shoot():
+	if !gun_anim.is_playing():
+		gun_anim.play("shoot")
+		var bulletInstance = bullet.instantiate()
+		bulletInstance.position = gun_barrel.global_position
+		bulletInstance.transform.basis = gun_barrel.global_transform.basis
+		get_parent().add_child(bulletInstance)
+	
 #	if not povRay.is_colliding():
 #		return
 #	var bulletInst = _bullet_scene.instantiate() as Node3D
@@ -134,7 +133,6 @@ func cast_spell():
 		$Ability/CooldownTimer.start()
 	else:
 		$Ability/FlashRedTimer.start()
-		
 		
 func hit(dir):# player is attacked by melee enemy
 	emit_signal("player_hit")

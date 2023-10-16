@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/Bullet/Bullet.gd" id="1_w83rl"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_h28as"]
-size = Vector3(0.1, 0.1, 1)
+[sub_resource type="SphereMesh" id="SphereMesh_7nab2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmjyj"]
 albedo_color = Color(0.454902, 0.227451, 0.654902, 1)
@@ -32,11 +31,11 @@ script = ExtResource("1_w83rl")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.31134e-07, 1, 4.37114e-08, 3.82137e-15, 4.37114e-08, -1, -1, 1.31134e-07, 1.91069e-15, 0, 0, 0)
-mesh = SubResource("BoxMesh_h28as")
+mesh = SubResource("SphereMesh_7nab2")
 surface_material_override/0 = SubResource("StandardMaterial3D_dmjyj")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1.31134e-07, 1, 4.37114e-08, 3.82137e-15, 4.37114e-08, -1, -1, 1.31134e-07, 1.91069e-15, -3.3196e-09, 0.0759435, 0)
+transform = Transform3D(1.50996e-06, 20, -4.37114e-08, 0, -8.74228e-07, -1, -20, 1.50996e-06, -3.30012e-15, -3.3196e-09, 0.0759435, 0)
 target_position = Vector3(0, 0, -0.6)
 collision_mask = 2
 collide_with_areas = true

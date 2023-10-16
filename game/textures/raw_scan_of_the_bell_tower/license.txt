@@ -1,0 +1,11 @@
+Model Information:
+* title:	Raw scan of the bell tower
+* source:	https://sketchfab.com/3d-models/raw-scan-of-the-bell-tower-64a38b57b1e64547b968679464ed2fb7
+* author:	Alexey Yuzhakov (https://sketchfab.com/tour3d)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Raw scan of the bell tower" (https://sketchfab.com/3d-models/raw-scan-of-the-bell-tower-64a38b57b1e64547b968679464ed2fb7) by Alexey Yuzhakov (https://sketchfab.com/tour3d) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

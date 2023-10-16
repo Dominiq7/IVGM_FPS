@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dk2movw4erb4c"]
+[gd_scene load_steps=9 format=3 uid="uid://dk2movw4erb4c"]
 
 [ext_resource type="PackedScene" uid="uid://dj26sacnhty4r" path="res://addons/devblocks/blocks/basic_block.tscn" id="1_mb7xe"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_3dp3s"]
 [ext_resource type="Texture2D" uid="uid://cgp4mvev1cbra" path="res://addons/devblocks/textures/purple/texture_01.png" id="3_ckmk4"]
+[ext_resource type="PackedScene" uid="uid://dartvkhk5aqq" path="res://Scenes/portal.tscn" id="4_07yug"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6g5uc"]
 
@@ -62,3 +63,6 @@ material = SubResource("StandardMaterial3D_2gtf0")
 transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 4, -13.0662, 2.84246, -1.36987)
 block_color_group = 1
 block_style = 2
+
+[node name="Portal" parent="." instance=ExtResource("4_07yug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.18709, 0.7, -10.8475)

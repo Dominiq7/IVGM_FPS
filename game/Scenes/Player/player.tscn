@@ -1,15 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=8 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_1w47b"]
-[ext_resource type="PackedScene" uid="uid://dbduds4bsaaby" path="res://Scenes/Bullet/Bullet.tscn" id="2_je25s"]
+[ext_resource type="PackedScene" uid="uid://bxyqvvup58wac" path="res://Scenes/Player/magic_wand.tscn" id="3_7gu7j"]
+[ext_resource type="Texture2D" uid="uid://d1bjtevd5bi8x" path="res://addons/kenney_textures/card_lift.png" id="3_auxs4"]
+[ext_resource type="Script" path="res://Scenes/healthBar/Healthbar.gd" id="4_ovw1k"]
+[ext_resource type="Texture2D" uid="uid://bm64665i4tady" path="res://addons/kenney_textures/environment_15.png" id="4_punx2"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_6b3ky"]
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_1w47b")
-_bullet_scene = ExtResource("2_je25s")
 
 [node name="CollisionShape3d" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_emkox")
@@ -22,6 +26,103 @@ mesh = SubResource("CapsuleMesh_6b3ky")
 [node name="Camera3d" type="Camera3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.468479, -0.463024)
 
+[node name="wand" parent="Head/Camera3d" instance=ExtResource("3_7gu7j")]
+transform = Transform3D(0.01, 0, 0, 0, 0.00404934, 0.00914346, 0, -0.00914346, 0.00404934, 0.124749, -0.344296, -0.048385)
+
 [node name="RayCast3d" type="RayCast3D" parent="Head/Camera3d"]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0, -0.00588068, 0.463024)
 target_position = Vector3(60, 0, 0)
+
+[node name="Ability" type="Node2D" parent="."]
+
+[node name="Outline" type="TextureRect" parent="Ability"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 528.0
+offset_top = 504.0
+offset_right = 656.0
+offset_bottom = 632.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.8, 0.8)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_punx2")
+
+[node name="Icon" type="TextureRect" parent="Ability"]
+z_index = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 547.0
+offset_top = 525.0
+offset_right = 675.0
+offset_bottom = 653.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_auxs4")
+
+[node name="CooldownTimerLabel" type="Label" parent="Ability"]
+z_index = 3
+offset_left = 561.0
+offset_top = 514.0
+offset_right = 601.0
+offset_bottom = 597.0
+theme_override_font_sizes/font_size = 60
+
+[node name="CooldownTimer" type="Timer" parent="Ability"]
+wait_time = 4.0
+one_shot = true
+
+[node name="FlashRedTimer" type="Timer" parent="Ability"]
+wait_time = 0.15
+one_shot = true
+
+[node name="healthbar" type="Node2D" parent="."]
+
+[node name="Control" type="Control" parent="healthbar"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 548.0
+offset_bottom = 178.0
+
+[node name="ProgressBar" type="ProgressBar" parent="healthbar/Control"]
+modulate = Color(0.929412, 0, 0.243137, 1)
+self_modulate = Color(1, 0.0117647, 0, 1)
+layout_mode = 0
+offset_left = 111.0
+offset_top = 23.0
+offset_right = 452.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.0862745, 0.0862745, 0.0862745, 1)
+theme_override_colors/font_outline_color = Color(0.835294, 0, 0, 1)
+theme_override_constants/outline_size = 0
+max_value = 1000.0
+step = 1.0
+value = 1000.0
+rounded = true
+script = ExtResource("4_ovw1k")
+
+[node name="Label" type="Label" parent="healthbar/Control"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 17.0
+offset_right = 81.0
+offset_bottom = 43.0
+scale = Vector2(1.4, 1.4)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.878431, 0.301961, 0.294118, 1)
+theme_override_colors/font_outline_color = Color(0.741176, 0, 0, 1)
+text = "Health"
+
+[connection signal="player_hit" from="." to="healthbar/Control/ProgressBar" method="_on_player_player_hit"]
+[connection signal="player_hit2" from="." to="healthbar/Control/ProgressBar" method="_on_player_player_hit_2"]

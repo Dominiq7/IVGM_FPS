@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cy53mjrmwfmf6"
+path="res://.godot/imported/siegeTower.obj-97ad3b99b08073e13070bfd96cdea5f1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/siegeTower.obj-97ad3b99b08073e13070bfd96cdea5f1.mesh"]
+
+source_file="res://addons/Castle_Kit/siegeTower.obj"
+dest_files=["res://.godot/imported/siegeTower.obj-97ad3b99b08073e13070bfd96cdea5f1.mesh", "res://.godot/imported/siegeTower.obj-97ad3b99b08073e13070bfd96cdea5f1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

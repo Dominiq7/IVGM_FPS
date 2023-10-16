@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dl7m52cknyiit"
+path="res://.godot/imported/flagBannerLong.obj-4e82445da8b1bf7cdc2a50cbf0aa73c2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flagBannerLong.obj-4e82445da8b1bf7cdc2a50cbf0aa73c2.mesh"]
+
+source_file="res://addons/Castle_Kit/flagBannerLong.obj"
+dest_files=["res://.godot/imported/flagBannerLong.obj-4e82445da8b1bf7cdc2a50cbf0aa73c2.mesh", "res://.godot/imported/flagBannerLong.obj-4e82445da8b1bf7cdc2a50cbf0aa73c2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

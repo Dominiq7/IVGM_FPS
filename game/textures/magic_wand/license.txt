@@ -1,0 +1,11 @@
+Model Information:
+* title:	Magic Wand
+* source:	https://sketchfab.com/3d-models/magic-wand-fcfb4ff9cfea45e380e785a69be20139
+* author:	IvanCrisan (https://sketchfab.com/IvanCrisan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Magic Wand" (https://sketchfab.com/3d-models/magic-wand-fcfb4ff9cfea45e380e785a69be20139) by IvanCrisan (https://sketchfab.com/IvanCrisan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dlwx0nmal5w7t"
+path="res://.godot/imported/towerTopCorner.obj-fae99020d70f8018ce4d147785c3cd52.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerTopCorner.obj-fae99020d70f8018ce4d147785c3cd52.mesh"]
+
+source_file="res://addons/Castle_Kit/towerTopCorner.obj"
+dest_files=["res://.godot/imported/towerTopCorner.obj-fae99020d70f8018ce4d147785c3cd52.mesh", "res://.godot/imported/towerTopCorner.obj-fae99020d70f8018ce4d147785c3cd52.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

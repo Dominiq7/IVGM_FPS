@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsw43db3ikm18"
+path="res://.godot/imported/ship_light.obj-b7acfe2f2ea254499f8f3fb19a6d8bca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ship_light.obj-b7acfe2f2ea254499f8f3fb19a6d8bca.mesh"]
+
+source_file="res://Scenes/Level_4/ship_light.obj"
+dest_files=["res://.godot/imported/ship_light.obj-b7acfe2f2ea254499f8f3fb19a6d8bca.mesh", "res://.godot/imported/ship_light.obj-b7acfe2f2ea254499f8f3fb19a6d8bca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -4,9 +4,9 @@ var player = null
 var state_machine
 var health = 4
 
-const SPEED = 4.5
+const SPEED = 5
 const ATTACK_RANGE = 2.0
-const RUN_RANGE = 10.0
+const RUN_RANGE = 15.0
 
 signal monster_hit
 
@@ -39,6 +39,9 @@ func _process(delta):
 		anim_tree.set("parameters/conditions/Run", !_target_in_range())
 		
 		move_and_slide()
+		
+	if global_position.distance_to(player.global_position) > RUN_RANGE:
+		look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
 	
 	
 func _target_in_range():

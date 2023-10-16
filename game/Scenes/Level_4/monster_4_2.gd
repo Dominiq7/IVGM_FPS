@@ -5,7 +5,7 @@ var player = null
 var state_machine
 var health = 4
 
-const ATTACK_RANGE = 10.0
+const ATTACK_RANGE = 15.0
 
 signal monster_hit
 

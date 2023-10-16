@@ -38,7 +38,7 @@ mesh = SubResource("BoxMesh_pvfco")
 [node name="RayCast3D" type="RayCast3D" parent="."]
 transform = Transform3D(1.31134e-07, 1, 4.37114e-08, 3.82137e-15, 4.37114e-08, -1, -1, 1.31134e-07, 1.91069e-15, -7.09485e-10, 0.016231, 0)
 target_position = Vector3(0, 0, -0.6)
-collision_mask = 6
+collision_mask = 2
 collide_with_areas = true
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]

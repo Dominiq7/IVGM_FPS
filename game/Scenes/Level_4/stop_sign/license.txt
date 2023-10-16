@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stop Sign
+* source:	https://sketchfab.com/3d-models/stop-sign-1358f096c19248d1a5284cac34c7ce25
+* author:	Genesis Gateway (https://sketchfab.com/genesisgateway)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stop Sign" (https://sketchfab.com/3d-models/stop-sign-1358f096c19248d1a5284cac34c7ce25) by Genesis Gateway (https://sketchfab.com/genesisgateway) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

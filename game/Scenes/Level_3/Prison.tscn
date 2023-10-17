@@ -108,7 +108,7 @@ shape = SubResource("ConcavePolygonShape3D_jy5vo")
 
 [node name="MetalGateMoveable" type="RigidBody3D" parent="." groups=["Liftable"]]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.3295, 0, -7.03397)
-gravity_scale = 0.25
+gravity_scale = 0.2
 script = ExtResource("3_gnfcx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MetalGateMoveable"]

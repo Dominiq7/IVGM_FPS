@@ -18,10 +18,6 @@ config/features=PackedStringArray("4.1", "Forward Plus")
 
 Settings="*res://Global/Settings.gd"
 
-[filesystem]
-
-import/fbx/enabled=false
-
 [display]
 
 window/size/viewport_width=1920

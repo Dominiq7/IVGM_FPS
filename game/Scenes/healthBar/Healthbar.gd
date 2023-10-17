@@ -26,7 +26,7 @@ func damage() -> void:
 
 
 func _on_player_player_hit():
-  health -= 25
+  health -= 20
   update_health_ui() 
   if health < 0 :get_tree().reload_current_scene() #h we can reset our level
 

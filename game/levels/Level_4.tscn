@@ -66,7 +66,7 @@ script = ExtResource("1_ldpfj")
 environment = SubResource("Environment_l5pxq")
 
 [node name="Player" parent="." instance=ExtResource("2_11frm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74697, 24.1238, -195.62)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0722479, 3.47493, 77.1823)
 
 [node name="DirectionalLight3d" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.966349, 0.250904, -0.0567091, 0.182362, -0.512743, 0.838951, 0.181419, -0.821061, -0.541244, -0.00693703, 229.214, -231.713)
@@ -386,8 +386,8 @@ transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 10.586
 mesh = ExtResource("24_uvyo1")
 skeleton = NodePath("../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="map3"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 10.5864, 8.27145, -33.427)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="map3/MetalGate"]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_l4wqg")
 
 [node name="cliff_step" parent="map3" instance=ExtResource("14_m8bt3")]
@@ -808,7 +808,7 @@ transform = Transform3D(-0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 
 player_path = NodePath("../../Player")
 
 [node name="monster4_2" parent="monster_level4" instance=ExtResource("30_pmdm4")]
-transform = Transform3D(0.572833, 0, 0.819672, 0, 1, 0, -0.819672, 0, 0.572833, 4.13834, 0.520727, 52.766)
+transform = Transform3D(0.572833, 0, 0.819672, 0, 1, 0, -0.819672, 0, 0.572833, -0.315732, 3.09418, 65.0054)
 player_path = NodePath("../../Player")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]

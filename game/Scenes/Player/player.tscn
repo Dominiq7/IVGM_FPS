@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=9 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="PackedScene" uid="uid://bxyqvvup58wac" path="res://Scenes/Player/magic_wand.tscn" id="3_7gu7j"]
+[ext_resource type="Texture2D" uid="uid://dsg7kuxncmfvk" path="res://Scenes/Player/crosshair109.png" id="3_ap4hr"]
 [ext_resource type="Texture2D" uid="uid://d1bjtevd5bi8x" path="res://addons/kenney_textures/card_lift.png" id="3_auxs4"]
 [ext_resource type="Script" path="res://Scenes/healthBar/Healthbar.gd" id="4_ovw1k"]
 [ext_resource type="Texture2D" uid="uid://bm64665i4tady" path="res://addons/kenney_textures/environment_15.png" id="4_punx2"]
@@ -12,7 +13,7 @@
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 collision_layer = 2
-collision_mask = 3
+collision_mask = 5
 script = ExtResource("1_1w47b")
 
 [node name="CollisionShape3d" type="CollisionShape3D" parent="."]
@@ -27,11 +28,22 @@ mesh = SubResource("CapsuleMesh_6b3ky")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.468479, -0.463024)
 
 [node name="wand" parent="Head/Camera3d" instance=ExtResource("3_7gu7j")]
-transform = Transform3D(0.01, 0, 0, 0, 0.00404934, 0.00914346, 0, -0.00914346, 0.00404934, 0.124749, -0.344296, -0.048385)
+transform = Transform3D(0.01, 0, 0, 0, 8.7067e-07, 0.01, 0, -0.01, 8.7067e-07, 0.0615997, -0.118492, 0.0910079)
 
 [node name="RayCast3d" type="RayCast3D" parent="Head/Camera3d"]
-transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0, -0.00588068, 0.463024)
+transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0, -0.00321075, 0.463024)
 target_position = Vector3(60, 0, 0)
+
+[node name="CenterContainer" type="CenterContainer" parent="Head/Camera3d"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Head/Camera3d/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("3_ap4hr")
 
 [node name="Ability" type="Node2D" parent="."]
 
@@ -41,10 +53,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 528.0
-offset_top = 504.0
-offset_right = 656.0
-offset_bottom = 632.0
+offset_left = 913.0
+offset_top = 935.0
+offset_right = 1041.0
+offset_bottom = 1063.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.8, 0.8)
@@ -59,10 +71,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 547.0
-offset_top = 525.0
-offset_right = 675.0
-offset_bottom = 653.0
+offset_left = 932.0
+offset_top = 956.0
+offset_right = 1060.0
+offset_bottom = 1084.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.5, 0.5)
@@ -72,10 +84,10 @@ texture = ExtResource("3_auxs4")
 
 [node name="CooldownTimerLabel" type="Label" parent="Ability"]
 z_index = 3
-offset_left = 561.0
-offset_top = 514.0
-offset_right = 601.0
-offset_bottom = 597.0
+offset_left = 946.0
+offset_top = 945.0
+offset_right = 986.0
+offset_bottom = 1028.0
 theme_override_font_sizes/font_size = 60
 
 [node name="CooldownTimer" type="Timer" parent="Ability"]

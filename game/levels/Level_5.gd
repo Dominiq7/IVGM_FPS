@@ -3,7 +3,7 @@ extends Node3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for sprite in $Water.get_children():
+	for sprite in $NavigationRegion3D/River/Water.get_children():
 		sprite.play()
 
 

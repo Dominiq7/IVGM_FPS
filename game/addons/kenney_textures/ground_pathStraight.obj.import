@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wk7re4rtqlwc"
+path="res://.godot/imported/ground_pathStraight.obj-686f0a3784ad304e050a62112a813b75.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathStraight.obj-686f0a3784ad304e050a62112a813b75.mesh"]
+
+source_file="res://addons/kenney_textures/ground_pathStraight.obj"
+dest_files=["res://.godot/imported/ground_pathStraight.obj-686f0a3784ad304e050a62112a813b75.mesh", "res://.godot/imported/ground_pathStraight.obj-686f0a3784ad304e050a62112a813b75.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

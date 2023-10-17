@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="IVGM_FPS"
-run/main_scene="res://levels/Level_Testing.tscn"
+run/main_scene="res://levels/Level_5.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 
 [autoload]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cd77gklmw1kon"
+path="res://.godot/imported/rock_tallH.obj-7cba8eb4ae6581c67d0a8460438cb695.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_tallH.obj-7cba8eb4ae6581c67d0a8460438cb695.mesh"]
+
+source_file="res://addons/kenney_textures/rock_tallH.obj"
+dest_files=["res://.godot/imported/rock_tallH.obj-7cba8eb4ae6581c67d0a8460438cb695.mesh", "res://.godot/imported/rock_tallH.obj-7cba8eb4ae6581c67d0a8460438cb695.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

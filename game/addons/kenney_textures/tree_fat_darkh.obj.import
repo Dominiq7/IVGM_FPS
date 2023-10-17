@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://byyone6rs62jr"
+path="res://.godot/imported/tree_fat_darkh.obj-def1d94b886727351c101253c2534732.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_fat_darkh.obj-def1d94b886727351c101253c2534732.mesh"]
+
+source_file="res://addons/kenney_textures/tree_fat_darkh.obj"
+dest_files=["res://.godot/imported/tree_fat_darkh.obj-def1d94b886727351c101253c2534732.mesh", "res://.godot/imported/tree_fat_darkh.obj-def1d94b886727351c101253c2534732.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

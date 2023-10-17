@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://btxlu4tg6mwkb"
+path="res://.godot/imported/rock_largeD.obj-fb5b743a9ca99e1ec7c1e7c67f6ac43e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_largeD.obj-fb5b743a9ca99e1ec7c1e7c67f6ac43e.mesh"]
+
+source_file="res://addons/kenney_textures/rock_largeD.obj"
+dest_files=["res://.godot/imported/rock_largeD.obj-fb5b743a9ca99e1ec7c1e7c67f6ac43e.mesh", "res://.godot/imported/rock_largeD.obj-fb5b743a9ca99e1ec7c1e7c67f6ac43e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

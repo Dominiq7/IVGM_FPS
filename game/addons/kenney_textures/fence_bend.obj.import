@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cwey3tlnml278"
+path="res://.godot/imported/fence_bend.obj-fc1c6c0e223b7d189522e1ba3e00c0c2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_bend.obj-fc1c6c0e223b7d189522e1ba3e00c0c2.mesh"]
+
+source_file="res://addons/kenney_textures/fence_bend.obj"
+dest_files=["res://.godot/imported/fence_bend.obj-fc1c6c0e223b7d189522e1ba3e00c0c2.mesh", "res://.godot/imported/fence_bend.obj-fc1c6c0e223b7d189522e1ba3e00c0c2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://btj1s5dd8u8bq"]
+
+[ext_resource type="ArrayMesh" uid="uid://nurfijowp5ly" path="res://addons/kenney_nature-kit/cliff_top_stone.obj" id="1_3t4dr"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_h0thp"]
+points = PackedVector3Array(0.507937, 0.912717, -0.222278, -0.479712, 0.884492, -0.5, -0.507937, 1.00792, -0.507937, 0.507937, 1.00792, -0.507937, -0.507937, 1.00792, -0.317498, -0.507937, 0.896847, -0.222278, 0.479712, 0.884492, -0.5, 0.507937, 1.00792, -0.317498, 0.507937, 0.880965, -0.317498, -0.507937, 0.880965, -0.317498, 0.507937, 0.896847, -0.222278, -0.507937, 0.912717, -0.222278)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8fwxq"]
+points = PackedVector3Array(-0.465704, 0.0291803, -0.5, 0.507937, 0.880865, -0.31746, 0.507937, -0.00776258, -0.31746, -0.507937, 0.880865, -0.31746, 0.465704, 0.843922, -0.5, -0.507937, -0.00776258, -0.31746, 0.465704, 0.0291803, -0.5, -0.465704, 0.843922, -0.5)
+
+[node name="RiverBedSidewall" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_3t4dr")
+
+[node name="@CollisionShape3D@85584" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_h0thp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_8fwxq")

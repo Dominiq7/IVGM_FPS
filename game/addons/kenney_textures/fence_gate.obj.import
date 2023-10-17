@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bm35t3aeguq5p"
+path="res://.godot/imported/fence_gate.obj-951ea7a662ba05f5154541ab412127d9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_gate.obj-951ea7a662ba05f5154541ab412127d9.mesh"]
+
+source_file="res://addons/kenney_textures/fence_gate.obj"
+dest_files=["res://.godot/imported/fence_gate.obj-951ea7a662ba05f5154541ab412127d9.mesh", "res://.godot/imported/fence_gate.obj-951ea7a662ba05f5154541ab412127d9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dsm56k5wwp51x"
+path="res://.godot/imported/ground_pathSplit.obj-d733b44ff687cfec73899ec9c4221e56.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathSplit.obj-d733b44ff687cfec73899ec9c4221e56.mesh"]
+
+source_file="res://addons/kenney_textures/ground_pathSplit.obj"
+dest_files=["res://.godot/imported/ground_pathSplit.obj-d733b44ff687cfec73899ec9c4221e56.mesh", "res://.godot/imported/ground_pathSplit.obj-d733b44ff687cfec73899ec9c4221e56.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

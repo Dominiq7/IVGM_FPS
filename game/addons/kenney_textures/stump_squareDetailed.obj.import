@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cha2tso222irs"
+path="res://.godot/imported/stump_squareDetailed.obj-80cec5e27e4a0b5d74e9258abe238755.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stump_squareDetailed.obj-80cec5e27e4a0b5d74e9258abe238755.mesh"]
+
+source_file="res://addons/kenney_textures/stump_squareDetailed.obj"
+dest_files=["res://.godot/imported/stump_squareDetailed.obj-80cec5e27e4a0b5d74e9258abe238755.mesh", "res://.godot/imported/stump_squareDetailed.obj-80cec5e27e4a0b5d74e9258abe238755.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

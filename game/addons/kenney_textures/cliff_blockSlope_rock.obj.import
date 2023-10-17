@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://oef4ohtop5af"
+path="res://.godot/imported/cliff_blockSlope_rock.obj-52b4cc2b3597a2eeec493cff39b3d72b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_blockSlope_rock.obj-52b4cc2b3597a2eeec493cff39b3d72b.mesh"]
+
+source_file="res://addons/kenney_textures/cliff_blockSlope_rock.obj"
+dest_files=["res://.godot/imported/cliff_blockSlope_rock.obj-52b4cc2b3597a2eeec493cff39b3d72b.mesh", "res://.godot/imported/cliff_blockSlope_rock.obj-52b4cc2b3597a2eeec493cff39b3d72b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

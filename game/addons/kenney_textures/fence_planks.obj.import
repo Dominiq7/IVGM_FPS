@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c1rk6mwkhq2h3"
+path="res://.godot/imported/fence_planks.obj-4e16ff1502828e0bfdb0cd1116ad193b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_planks.obj-4e16ff1502828e0bfdb0cd1116ad193b.mesh"]
+
+source_file="res://addons/kenney_textures/fence_planks.obj"
+dest_files=["res://.godot/imported/fence_planks.obj-4e16ff1502828e0bfdb0cd1116ad193b.mesh", "res://.godot/imported/fence_planks.obj-4e16ff1502828e0bfdb0cd1116ad193b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

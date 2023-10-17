@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://t27hw2mdn2qr"
+path="res://.godot/imported/tent_detailedClosed.obj-f13e0406cc374d134c0659da25d2c4c3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tent_detailedClosed.obj-f13e0406cc374d134c0659da25d2c4c3.mesh"]
+
+source_file="res://addons/kenney_textures/tent_detailedClosed.obj"
+dest_files=["res://.godot/imported/tent_detailedClosed.obj-f13e0406cc374d134c0659da25d2c4c3.mesh", "res://.godot/imported/tent_detailedClosed.obj-f13e0406cc374d134c0659da25d2c4c3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

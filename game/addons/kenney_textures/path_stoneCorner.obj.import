@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d4maabt1e1hds"
+path="res://.godot/imported/path_stoneCorner.obj-1ce7d470a19c5fee3483992ba5da87a3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/path_stoneCorner.obj-1ce7d470a19c5fee3483992ba5da87a3.mesh"]
+
+source_file="res://addons/kenney_textures/path_stoneCorner.obj"
+dest_files=["res://.godot/imported/path_stoneCorner.obj-1ce7d470a19c5fee3483992ba5da87a3.mesh", "res://.godot/imported/path_stoneCorner.obj-1ce7d470a19c5fee3483992ba5da87a3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

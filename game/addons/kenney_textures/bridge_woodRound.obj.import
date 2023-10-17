@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b01x6ltlylcad"
+path="res://.godot/imported/bridge_woodRound.obj-e28ac9e8caf5cc8bd2ba0b9dd2b0e53b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bridge_woodRound.obj-e28ac9e8caf5cc8bd2ba0b9dd2b0e53b.mesh"]
+
+source_file="res://addons/kenney_textures/bridge_woodRound.obj"
+dest_files=["res://.godot/imported/bridge_woodRound.obj-e28ac9e8caf5cc8bd2ba0b9dd2b0e53b.mesh", "res://.godot/imported/bridge_woodRound.obj-e28ac9e8caf5cc8bd2ba0b9dd2b0e53b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

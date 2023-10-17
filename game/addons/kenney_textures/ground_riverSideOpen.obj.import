@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b2yi7aisk7u7d"
+path="res://.godot/imported/ground_riverSideOpen.obj-262aea4d1f2e8954e630adb94d606fca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_riverSideOpen.obj-262aea4d1f2e8954e630adb94d606fca.mesh"]
+
+source_file="res://addons/kenney_textures/ground_riverSideOpen.obj"
+dest_files=["res://.godot/imported/ground_riverSideOpen.obj-262aea4d1f2e8954e630adb94d606fca.mesh", "res://.godot/imported/ground_riverSideOpen.obj-262aea4d1f2e8954e630adb94d606fca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

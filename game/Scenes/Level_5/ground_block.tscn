@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dni5ugyadum55"]
+
+[ext_resource type="ArrayMesh" uid="uid://derkn2vgon51s" path="res://addons/kenney_textures/cliff_blockQuarter_rock.obj" id="1_2mvee"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u0kuo"]
+size = Vector3(1, 0.25, 1)
+
+[node name="GroundBlock" type="StaticBody3D"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, -0.00800657, 1.19209e-07, -0.00036478)
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_2mvee")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("BoxShape3D_u0kuo")

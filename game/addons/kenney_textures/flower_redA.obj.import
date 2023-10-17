@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cdg30y1110yt2"
+path="res://.godot/imported/flower_redA.obj-addc4d95bc8c68ac3e969c098dc380ae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flower_redA.obj-addc4d95bc8c68ac3e969c098dc380ae.mesh"]
+
+source_file="res://addons/kenney_textures/flower_redA.obj"
+dest_files=["res://.godot/imported/flower_redA.obj-addc4d95bc8c68ac3e969c098dc380ae.mesh", "res://.godot/imported/flower_redA.obj-addc4d95bc8c68ac3e969c098dc380ae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

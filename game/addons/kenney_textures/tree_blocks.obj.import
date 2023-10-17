@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bp1w6qxkqhqjo"
+path="res://.godot/imported/tree_blocks.obj-323fe5bd512ab99e51b4400375bd794f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_blocks.obj-323fe5bd512ab99e51b4400375bd794f.mesh"]
+
+source_file="res://addons/kenney_textures/tree_blocks.obj"
+dest_files=["res://.godot/imported/tree_blocks.obj-323fe5bd512ab99e51b4400375bd794f.mesh", "res://.godot/imported/tree_blocks.obj-323fe5bd512ab99e51b4400375bd794f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

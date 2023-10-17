@@ -18,6 +18,15 @@ config/features=PackedStringArray("4.1", "Forward Plus")
 
 Settings="*res://Global/Settings.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
+[filesystem]
+
+import/fbx/enabled=false
+
 [input]
 
 moveLeft={

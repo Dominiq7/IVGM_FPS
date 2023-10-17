@@ -1,6 +1,5 @@
-[gd_scene load_steps=17 format=3 uid="uid://dk2movw4erb4c"]
+[gd_scene load_steps=15 format=3 uid="uid://dk2movw4erb4c"]
 
-[ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_3dp3s"]
 [ext_resource type="PackedScene" uid="uid://crtsdnsve2iqg" path="res://addons/k_assets/kenney_nature-kit/Models/GLTF format/ground_grass.glb" id="2_638pc"]
 [ext_resource type="PackedScene" uid="uid://fj70usdrtsjy" path="res://addons/k_assets/kenney_nature-kit/Models/GLTF format/platform_grass.glb" id="3_h1cek"]
 [ext_resource type="PackedScene" uid="uid://bq4mrdd6txjco" path="res://Scenes/Level_3/Prison.tscn" id="4_eafia"]
@@ -12,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://ds7gq03ub4oav" path="res://addons/k_assets/kenney_nature-kit/Models/GLTF format/tree_default_dark.glb" id="10_3edcr"]
 [ext_resource type="PackedScene" uid="uid://168ev86o78vy" path="res://addons/k_assets/kenney_nature-kit/Models/GLTF format/tree_detailed.glb" id="11_byvs7"]
 [ext_resource type="PackedScene" uid="uid://drkqikcycs5va" path="res://addons/k_assets/kenney_nature-kit/Models/GLTF format/tree_cone_dark.glb" id="12_nadab"]
-[ext_resource type="PackedScene" uid="uid://dartvkhk5aqq" path="res://Scenes/portal.tscn" id="13_blbyf"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6g5uc"]
 
@@ -28,9 +26,6 @@ sky = SubResource("Sky_ivwug")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_l5pxq")
-
-[node name="Player" parent="." instance=ExtResource("2_3dp3s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.843, 67.9242, 42.0091)
 
 [node name="ground_grass" parent="." instance=ExtResource("2_638pc")]
 transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0.0903554, 0, 0.0768137)
@@ -1099,6 +1094,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.490251, 0, 0.315392)
 
 [node name="tree_detailed2" parent="Trees/Trees23" instance=ExtResource("11_byvs7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.348682, 0, 0.716988)
-
-[node name="Portal" parent="." instance=ExtResource("13_blbyf")]
-transform = Transform3D(0.697415, 0, -0.716667, 0, 1, 0, 0.716667, 0, 0.697415, 43.6674, 66.4154, 34.3021)

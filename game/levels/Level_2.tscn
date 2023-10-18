@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3 uid="uid://c61ndhylxbdsq"]
+[gd_scene load_steps=82 format=3 uid="uid://c61ndhylxbdsq"]
 
 [ext_resource type="PackedScene" uid="uid://dwjpo5gbdtd4e" path="res://Scenes/torch.tscn" id="2_vx35y"]
 [ext_resource type="Texture2D" path="res://textures/rock/Rock_047_BaseColor.jpg" id="2_yqyqi"]
@@ -20,6 +20,9 @@
 [ext_resource type="ArrayMesh" uid="uid://t5q1oywi0tx3" path="res://textures/Dungeon OBJ/wall-opening.obj" id="14_rgo4x"]
 [ext_resource type="ArrayMesh" uid="uid://bftfsuk208g1f" path="res://textures/Dungeon OBJ/wood-structure.obj" id="17_ox7l2"]
 [ext_resource type="ArrayMesh" uid="uid://d04x7weekfg2e" path="res://textures/Dungeon OBJ/chest.obj" id="18_nckhr"]
+[ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="21_tmgsb"]
+[ext_resource type="PackedScene" uid="uid://dofhp3sv5p37p" path="res://Scenes/Level2/crate_big.tscn" id="22_2pmy1"]
+[ext_resource type="PackedScene" uid="uid://byrxmwc4h2vhj" path="res://Scenes/Level2/crate.tscn" id="23_ve2rt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6g5uc"]
 
@@ -1142,9 +1145,6 @@ transform = Transform3D(1.30298, 0, -1.51732, 0, 2, 0, 1.51732, 0, 1.30298, 39.1
 [node name="Crate4" parent="NavigationRegion3D/Obstacles/Chamber1" instance=ExtResource("4_7823m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.3269, 1.21352, 40.6806)
 
-[node name="Crate5" parent="NavigationRegion3D/Obstacles/Chamber1" instance=ExtResource("4_7823m")]
-transform = Transform3D(1.73483, 0, -3.60422, 0, 4, 0, 3.60422, 0, 1.73483, 17.6651, 2.51916, 37.6134)
-
 [node name="Chamber2" type="Node3D" parent="NavigationRegion3D/Obstacles"]
 
 [node name="Column" type="MeshInstance3D" parent="NavigationRegion3D/Obstacles/Chamber2"]
@@ -1567,3 +1567,12 @@ mesh = ExtResource("18_nckhr")
 [node name="Chest3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.240336, 0, 2.99036, 0, 3, 0, -2.99036, 0, -0.240336, -58.6195, 25.4714, 58.1741)
 mesh = ExtResource("18_nckhr")
+
+[node name="Player" parent="." instance=ExtResource("21_tmgsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.8115, 2.03373, 28.9627)
+
+[node name="Crate" parent="." instance=ExtResource("22_2pmy1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.5645, 0.542161, 21.0064)
+
+[node name="Crate2" parent="." instance=ExtResource("23_ve2rt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5329, 1.5103, 37.4468)

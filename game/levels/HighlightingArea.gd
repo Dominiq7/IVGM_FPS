@@ -6,7 +6,7 @@ extends StaticBody3D
 var portal
 var player
 
-const SHOW_RANGE = 10.0
+const SHOW_RANGE = 20.0
 
 func _ready():
 	portal = get_node(portal_path)

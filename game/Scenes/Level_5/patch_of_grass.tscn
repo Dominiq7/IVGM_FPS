@@ -1,0 +1,340 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnmwewkaypwc6"]
+
+[ext_resource type="ArrayMesh" uid="uid://biffm73xaluuv" path="res://addons/kenney_textures/grass_large.obj" id="1_sata6"]
+
+[node name="PatchOfGrass" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.158473, 0, 0.578542)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.372639, 0, 0)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.79363, 0, -0.608401, 0, 1, 0, 0.608401, 0, 0.79363, 0.037181, 0, 0.22001)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.79363, 0, -0.608401, 0, 1, 0, 0.608401, 0, 0.79363, 0.386501, 0, 0.22001)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.79363, 0, -0.608401, 0, 1, 0, 0.608401, 0, 0.79363, 0.0349336, 0, 0.505217)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.79363, 0, -0.608401, 0, 1, 0, 0.608401, 0, 0.79363, 0.330489, 0, 0.505217)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.868, 0, 0.496565, 0, 1, 0, -0.496565, 0, 0.868, -0.704312, 0, 0.230033)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.868, 0, 0.496565, 0, 1, 0, -0.496565, 0, 0.868, -0.279473, 0, 0.653516)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.868, 0, 0.496565, 0, 1, 0, -0.496565, 0, 0.868, -0.380861, 0, 0.0449936)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.990981, 0, -0.134003, 0, 1, 0, 0.134003, 0, 0.990981, -0.562789, 0, 0.402539)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.990981, 0, -0.134003, 0, 1, 0, 0.134003, 0, 0.990981, -0.25958, 0, 0.229079)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.990981, 0, -0.134003, 0, 1, 0, 0.134003, 0, 0.990981, -0.423116, 0, 0.651214)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.990981, 0, -0.134003, 0, 1, 0, 0.134003, 0, 0.990981, -0.166574, 0, 0.504452)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.915543, 0, -0.402219, 0, 1, 0, 0.402219, 0, 0.915543, 0.727014, 0, 0.0467395)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.915543, 0, -0.402219, 0, 1, 0, 0.402219, 0, 0.915543, 0.639402, 0, 0.640161)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.915543, 0, -0.402219, 0, 1, 0, 0.402219, 0, 0.915543, 1.06818, 0, 0.196622)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.481891, 0, -0.876231, 0, 1, 0, 0.876231, 0, 0.481891, 0.672563, 0, 0.263123)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.481891, 0, -0.876231, 0, 1, 0, 0.876231, 0, 0.481891, 0.99238, 0, 0.403626)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.481891, 0, -0.876231, 0, 1, 0, 0.876231, 0, 0.481891, 0.55579, 0, 0.523338)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.481891, 0, -0.876231, 0, 1, 0, 0.876231, 0, 0.481891, 0.826384, 0, 0.642217)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.115128, 0, -0.993351, 0, 1, 0, 0.993351, 0, -0.115128, 0.407849, 0, 0.653866)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.115128, 0, -0.993351, 0, 1, 0, 0.993351, 0, -0.115128, -0.185091, 0, 0.744679)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.115128, 0, -0.993351, 0, 1, 0, 0.993351, 0, -0.115128, 0.364948, 0, 1.02403)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.695725, 0, -0.718309, 0, 1, 0, 0.718309, 0, -0.695725, 0.185022, 0, 0.665471)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.695725, 0, -0.718309, 0, 1, 0, 0.718309, 0, -0.695725, 0.144805, 0, 1.01247)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.695725, 0, -0.718309, 0, 1, 0, 0.718309, 0, -0.695725, -0.0980301, 0, 0.630403)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.695725, 0, -0.718309, 0, 1, 0, 0.718309, 0, -0.695725, -0.132057, 0, 0.923994)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.474488, 0, 0.880262, 0, 1, 0, -0.880262, 0, 0.474488, -0.778982, 0, 0.83633)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D30" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.474488, 0, 0.880262, 0, 1, 0, -0.880262, 0, 0.474488, -0.19452, 0, 0.971344)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D31" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.474488, 0, 0.880262, 0, 1, 0, -0.880262, 0, 0.474488, -0.602169, 0, 0.50831)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D32" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.91212, 0, 0.409923, 0, 1, 0, -0.409923, 0, 0.91212, -0.567674, 0, 0.907993)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D33" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.91212, 0, 0.409923, 0, 1, 0, -0.409923, 0, 0.91212, -0.401926, 0, 0.600501)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D34" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.91212, 0, 0.409923, 0, 1, 0, -0.409923, 0, 0.91212, -0.317683, 0, 1.0453)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D35" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.91212, 0, 0.409923, 0, 1, 0, -0.409923, 0, 0.91212, -0.177446, 0, 0.785132)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D36" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.672431, 0, -0.74016, 0, 1, 0, 0.74016, 0, 0.672431, 0.800048, 0, 0.47334)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D37" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.672431, 0, -0.74016, 0, 1, 0, 0.74016, 0, 0.672431, 0.478396, 0, 0.979665)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D38" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.672431, 0, -0.74016, 0, 1, 0, 0.74016, 0, 0.672431, 1.05062, 0, 0.749152)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D39" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0833474, 0, -0.996521, 0, 1, 0, 0.996521, 0, 0.0833474, 0.662207, 0, 0.648801)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D40" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0833474, 0, -0.996521, 0, 1, 0, 0.996521, 0, 0.0833474, 0.8971, 0, 0.907353)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D41" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0833474, 0, -0.996521, 0, 1, 0, 0.996521, 0, 0.0833474, 0.449597, 0, 0.83892)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D42" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0833474, 0, -0.996521, 0, 1, 0, 0.996521, 0, 0.0833474, 0.648338, 0, 1.05768)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D43" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.02625)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D44" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.158473, 0, 1.6048)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D45" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.372639, 0, 1.02625)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D46" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.79363, 0, -0.608401, 0, 1, 0, 0.608401, 0, 0.79363, 0.037181, 0, 1.24626)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D47" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.79363, 0, -0.608401, 0, 1, 0, 0.608401, 0, 0.79363, 0.386501, 0, 1.24626)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D48" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.79363, 0, -0.608401, 0, 1, 0, 0.608401, 0, 0.79363, 0.0349336, 0, 1.53147)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D49" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.79363, 0, -0.608401, 0, 1, 0, 0.608401, 0, 0.79363, 0.330489, 0, 1.53147)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D50" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.868, 0, 0.496565, 0, 1, 0, -0.496565, 0, 0.868, -0.704312, 0, 1.25629)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D51" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.868, 0, 0.496565, 0, 1, 0, -0.496565, 0, 0.868, -0.279473, 0, 1.67977)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D52" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.868, 0, 0.496565, 0, 1, 0, -0.496565, 0, 0.868, -0.380861, 0, 1.07125)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D53" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.990981, 0, -0.134003, 0, 1, 0, 0.134003, 0, 0.990981, -0.562789, 0, 1.42879)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D54" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.990981, 0, -0.134003, 0, 1, 0, 0.134003, 0, 0.990981, -0.25958, 0, 1.25533)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D55" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.990981, 0, -0.134003, 0, 1, 0, 0.134003, 0, 0.990981, -0.423116, 0, 1.67747)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D56" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.990981, 0, -0.134003, 0, 1, 0, 0.134003, 0, 0.990981, -0.166574, 0, 1.53071)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D57" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.915543, 0, -0.402219, 0, 1, 0, 0.402219, 0, 0.915543, 0.727014, 0, 1.07299)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D58" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.915543, 0, -0.402219, 0, 1, 0, 0.402219, 0, 0.915543, 0.639402, 0, 1.66642)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D59" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.915543, 0, -0.402219, 0, 1, 0, 0.402219, 0, 0.915543, 1.06818, 0, 1.22288)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D60" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.481891, 0, -0.876231, 0, 1, 0, 0.876231, 0, 0.481891, 0.672563, 0, 1.28938)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D61" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.481891, 0, -0.876231, 0, 1, 0, 0.876231, 0, 0.481891, 0.99238, 0, 1.42988)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D62" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.481891, 0, -0.876231, 0, 1, 0, 0.876231, 0, 0.481891, 0.55579, 0, 1.54959)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D63" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.481891, 0, -0.876231, 0, 1, 0, 0.876231, 0, 0.481891, 0.826384, 0, 1.66847)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D64" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.115128, 0, -0.993351, 0, 1, 0, 0.993351, 0, -0.115128, 0.407849, 0, 1.68012)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D65" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.115128, 0, -0.993351, 0, 1, 0, 0.993351, 0, -0.115128, -0.185091, 0, 1.77093)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D66" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.115128, 0, -0.993351, 0, 1, 0, 0.993351, 0, -0.115128, 0.364948, 0, 2.05028)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D67" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.695725, 0, -0.718309, 0, 1, 0, 0.718309, 0, -0.695725, 0.185022, 0, 1.69173)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D68" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.695725, 0, -0.718309, 0, 1, 0, 0.718309, 0, -0.695725, 0.144805, 0, 2.03872)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D69" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.695725, 0, -0.718309, 0, 1, 0, 0.718309, 0, -0.695725, -0.0980301, 0, 1.65666)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D70" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.695725, 0, -0.718309, 0, 1, 0, 0.718309, 0, -0.695725, -0.132057, 0, 1.95025)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D71" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.474488, 0, 0.880262, 0, 1, 0, -0.880262, 0, 0.474488, -0.778982, 0, 1.86259)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D72" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.474488, 0, 0.880262, 0, 1, 0, -0.880262, 0, 0.474488, -0.19452, 0, 1.9976)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D73" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.474488, 0, 0.880262, 0, 1, 0, -0.880262, 0, 0.474488, -0.602169, 0, 1.53457)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D74" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.91212, 0, 0.409923, 0, 1, 0, -0.409923, 0, 0.91212, -0.567674, 0, 1.93425)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D75" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.91212, 0, 0.409923, 0, 1, 0, -0.409923, 0, 0.91212, -0.401926, 0, 1.62676)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D76" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.91212, 0, 0.409923, 0, 1, 0, -0.409923, 0, 0.91212, -0.317683, 0, 2.07155)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D77" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.91212, 0, 0.409923, 0, 1, 0, -0.409923, 0, 0.91212, -0.177446, 0, 1.81139)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D78" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.672431, 0, -0.74016, 0, 1, 0, 0.74016, 0, 0.672431, 0.800048, 0, 1.49959)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D79" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.672431, 0, -0.74016, 0, 1, 0, 0.74016, 0, 0.672431, 0.478396, 0, 2.00592)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D80" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.672431, 0, -0.74016, 0, 1, 0, 0.74016, 0, 0.672431, 1.05062, 0, 1.77541)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D81" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0833474, 0, -0.996521, 0, 1, 0, 0.996521, 0, 0.0833474, 0.662207, 0, 1.67506)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D82" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0833474, 0, -0.996521, 0, 1, 0, 0.996521, 0, 0.0833474, 0.8971, 0, 1.93361)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D83" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0833474, 0, -0.996521, 0, 1, 0, 0.996521, 0, 0.0833474, 0.449597, 0, 1.86517)
+mesh = ExtResource("1_sata6")
+
+[node name="MeshInstance3D84" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0833474, 0, -0.996521, 0, 1, 0, 0.996521, 0, 0.0833474, 0.648338, 0, 2.08393)
+mesh = ExtResource("1_sata6")

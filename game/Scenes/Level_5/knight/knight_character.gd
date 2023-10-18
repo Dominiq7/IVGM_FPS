@@ -55,7 +55,7 @@ func _attack_animation_finished():
 		player.hit(dir)
 
 func _target_in_range():
-	return global_position.distance_to(player.global_position) < ATTACK_RANGE
+	return global_position.distance_to(get_player_position_without_y()) < ATTACK_RANGE
 	
 func hit():
 	health -= 1
@@ -63,3 +63,6 @@ func hit():
 		anim_tree.set("parameters/conditions/Die", true)
 		await get_tree().create_timer(2.0833).timeout
 		queue_free()
+
+func get_player_position_without_y():
+	return Vector3(player.global_position.x, global_position.y, player.global_position.z)

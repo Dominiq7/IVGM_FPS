@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bap4ygehhqdy7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 79.0
+offset_right = 465.0
+offset_bottom = 240.0
+scale = Vector2(1.20659, 1.46074)
+text = "D : Move right 
+A : Move left
+W : Move forward
+S : Move backward 
+Space : Jump
+Shift : Sprint 
+E : lift Up
+"
+fit_content = true
+scroll_active = false

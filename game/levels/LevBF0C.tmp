@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://datotws81khhp" path="res://addons/k_assets/grunge-cracked-wall.jpg" id="3_6u8x4"]
 [ext_resource type="PackedScene" uid="uid://bap4ygehhqdy7" path="res://addons/k_assets/k_scenes/my scenes/instructions.tscn" id="3_ukwto"]
 [ext_resource type="PackedScene" uid="uid://cgnjoqgo3bivb" path="res://addons/k_assets/k_scenes/my scenes/wallscene/brick_wall.tscn" id="4_a74b8"]
+[ext_resource type="PackedScene" uid="uid://dot3n7bgslqss" path="res://Scenes/healthBar/Healthbar.tscn" id="4_prlg1"]
 [ext_resource type="PackedScene" uid="uid://bpujd6g6c7m8q" path="res://addons/k_assets/k_scenes/my scenes/wallscene/brick_wall_curve.tscn" id="5_3vnij"]
 [ext_resource type="PackedScene" uid="uid://rvjlacj0mnva" path="res://addons/k_assets/k_scenes/tower/fisrpart.tscn" id="6_u1dtg"]
 [ext_resource type="PackedScene" uid="uid://cdqa0rmh4merf" path="res://addons/k_assets/k_scenes/tower/castle.tscn" id="7_sdngq"]
@@ -77,14 +78,12 @@ emission_enabled = true
 emission = Color(0.839844, 0.0976563, 0.816406, 1)
 emission_energy_multiplier = 2.22
 
-[sub_resource type="TextMesh" id="TextMesh_0h4i1"]
-text = "You can only cross after
- you have trained well...!!"
-
 [node name="Node3d" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("2_civq4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.332513, 2.62907, -0.209949)
+
+[node name="healthbar2" parent="Player" instance=ExtResource("4_prlg1")]
 
 [node name="Control" parent="Player" instance=ExtResource("3_ukwto")]
 
@@ -909,10 +908,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_55tco")
 transform = Transform3D(-4.7864e-08, 1.095, 0, -1.095, -4.7864e-08, 0, 0, 0, 1.095, 0, -0.165104, 0)
 mesh = SubResource("TextMesh_xjlor")
 surface_material_override/0 = SubResource("StandardMaterial3D_y1cob")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(7.265, 0, 0, 0, 7.265, 0, 0, 0, 7.265, -1.76744, 14.7484, -78.6863)
-mesh = SubResource("TextMesh_0h4i1")
 
 [connection signal="body_entered" from="gate/Area3D2" to="gate" method="_on_area_3d_2_body_entered"]
 [connection signal="body_exited" from="gate/Area3D2" to="gate" method="_on_area_3d_2_body_exited"]

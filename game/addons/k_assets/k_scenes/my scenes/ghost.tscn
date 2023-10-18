@@ -1,7 +1,8 @@
 [gd_scene load_steps=28 format=3 uid="uid://ckmec6d8w000l"]
 
-[ext_resource type="Script" path="res://addons/k_assets/k_scenes/my scenes/goast.gd" id="1_elk4g"]
+[ext_resource type="Script" path="res://addons/k_assets/k_scenes/my scenes/ghost.gd" id="1_elk4g"]
 [ext_resource type="Material" uid="uid://co4wc6xd44gtc" path="res://addons/k_assets/k_scenes/mat/new_standard_material_3d.tres" id="1_orwau"]
+
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8584o"]
 emission_enabled = true

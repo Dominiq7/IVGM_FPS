@@ -1,7 +1,7 @@
-[gd_scene load_steps=31 format=3 uid="uid://jtkv2ytk200r"]
+[gd_scene load_steps=31 format=3 uid="uid://berxpqhet8stc"]
 
-[ext_resource type="Script" path="res://Scenes/Level_4/monster_4_2.gd" id="1_kfd6l"]
-[ext_resource type="Script" path="res://Scenes/Level_4/Area3D.gd" id="2_j6gbb"]
+[ext_resource type="Script" path="res://Scenes/Level_4/monster_4_2.gd" id="1_1jcu4"]
+[ext_resource type="Script" path="res://Scenes/Level_4/Area3D.gd" id="2_73vk4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vxu63"]
 resource_name = "Alien_Main"
@@ -585,8 +585,9 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 radius = 1.0
 
 [node name="monster4_2" type="CharacterBody3D"]
-script = ExtResource("1_kfd6l")
-player_path = null
+transform = Transform3D(0.572833, 0, 0.819672, 0, 1, 0, -0.819672, 0, 0.572833, -0.315732, 3.09418, 65.0054)
+script = ExtResource("1_1jcu4")
+player_path = NodePath("../../Player")
 
 [node name="CharacterArmature" type="Node3D" parent="."]
 
@@ -637,7 +638,7 @@ bone_idx = 1
 [node name="Area3D" type="Area3D" parent="CharacterArmature/Skeleton3D/BoneAttachment3D" groups=["enemy"]]
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("2_j6gbb")
+script = ExtResource("2_73vk4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterArmature/Skeleton3D/BoneAttachment3D/Area3D"]
 transform = Transform3D(1, 0, -2.84217e-14, 0, 1, 0, 0, 0, 1, 2.82581e-08, 0.561116, -0.292652)
@@ -664,4 +665,4 @@ shape = SubResource("SphereShape3D_sanh5")
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.20911, -0.639442)
 target_position = Vector3(0, -5, 0)
 
-[connection signal="body_part_hit" from="CharacterArmature/Skeleton3D/BoneAttachment3D/Area3D" to="." method="_on_area_3d_body_part_hit"]
+[connection signal="body_part_hit" from="CharacterArmature/Skeleton3D/BoneAttachment3D/Area3D" to="." method="_on_area_3d_body_part_hit" flags=18]

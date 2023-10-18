@@ -7,13 +7,15 @@ extends CharacterBody3D
 
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 10.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 8
 const HIT_STAGGER = 8.0
 
 var mouseSensibility = 1200
 var mouse_relative_x = 0
 var mouse_relative_y = 0
 var speed = WALK_SPEED
+
+var killed_enemies_level_1
 
 # signal
 signal player_hit
@@ -33,6 +35,7 @@ func _ready():
 	$Ability/CooldownTimerLabel.visible = false
 	$Ability.modulate = Color(1, 1, 1, 1)
 	$Ability/CooldownTimerLabel.modulate = Color(1, 1, 1, 0.5)
+	killed_enemies_level_1 = 0
 	
 func _process(delta):
 	
@@ -140,3 +143,7 @@ func playerDied():
 	get_tree().reload_current_scene()
 ################################################################################
 	
+
+
+func _on_monster_4_2_monster_hit():
+	killed_enemies_level_1 += 1

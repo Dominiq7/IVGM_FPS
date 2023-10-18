@@ -5,6 +5,7 @@ extends CharacterBody3D
 @onready var gun_anim =$Head/Camera3d/wand/AnimationPlayer
 @onready var gun_barrel = $Head/Camera3d/wand/RayCast3D
 
+
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 10.0
 const JUMP_VELOCITY = 4.5
@@ -140,3 +141,5 @@ func playerDied():
 	get_tree().reload_current_scene()
 ################################################################################
 	
+
+

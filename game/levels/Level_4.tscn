@@ -85,7 +85,7 @@ script = ExtResource("1_ldpfj")
 environment = SubResource("Environment_l5pxq")
 
 [node name="Player" parent="." instance=ExtResource("2_11frm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.366695, 3.82033, 102.818)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023668, 3.82033, 102.818)
 
 [node name="DirectionalLight3d" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.966349, 0.250904, -0.0567091, 0.182362, -0.512743, 0.838951, 0.181419, -0.821061, -0.541244, 8.51006, 241.167, -231.713)
@@ -353,7 +353,7 @@ transform = Transform3D(0.365624, 0, -0.596925, 0, 0.7, 0, 0.596925, 0, 0.365624
 player_path = NodePath("../../Player")
 
 [node name="monster4_2" parent="monster_level4" instance=ExtResource("30_pmdm4")]
-transform = Transform3D(0.400983, 0, 0.57377, 0, 0.7, 0, -0.57377, 0, 0.400983, -0.315732, 2.529, 63.1077)
+transform = Transform3D(-0.699795, 0, -0.0169312, 0, 0.7, 0, 0.0169312, 0, -0.699795, 0.433501, 2.529, 63.1077)
 player_path = NodePath("../../Player")
 
 [node name="monster4_3" parent="monster_level4" instance=ExtResource("30_pmdm4")]
@@ -429,7 +429,7 @@ transform = Transform3D(0.371099, 0, -0.593537, 0, 0.7, 0, 0.593537, 0, 0.371099
 player_path = NodePath("../../Player")
 
 [node name="Demon" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(0.0149394, 0, -0.999888, 0, 1, 0, 0.999888, 0, 0.0149394, 31.1237, 12.9153, -0.49688)
+transform = Transform3D(0.0149394, 0, -0.999888, 0, 1, 0, 0.999888, 0, 0.0149394, 31.1237, 12.4439, -0.49688)
 player_path = NodePath("../../Player")
 
 [node name="Demon3" parent="monster_level4" instance=ExtResource("42_vbuxn")]
@@ -441,11 +441,11 @@ transform = Transform3D(0.0149394, 0, -0.999888, 0, 1, 0, 0.999888, 0, 0.0149394
 player_path = NodePath("../../Player")
 
 [node name="Demon4" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(0.0149394, 0, -0.999888, 0, 1, 0, 0.999888, 0, 0.0149394, 38.2202, 19.2278, -48.7104)
+transform = Transform3D(0.0149394, 0, -0.999888, 0, 1, 0, 0.999888, 0, 0.0149394, 38.2202, 18.5711, -48.7104)
 player_path = NodePath("../../Player")
 
 [node name="Demon5" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(0.0149394, 0, -0.999888, 0, 1, 0, 0.999888, 0, 0.0149394, 44.5492, 19.2278, -74.7104)
+transform = Transform3D(0.0149394, 0, -0.999888, 0, 1, 0, 0.999888, 0, 0.0149394, 44.5492, 18.9247, -74.7104)
 player_path = NodePath("../../Player")
 
 [node name="Demon2" parent="monster_level4" instance=ExtResource("42_vbuxn")]
@@ -453,27 +453,27 @@ transform = Transform3D(0.0149394, 0, -0.999888, 0, 1, 0, 0.999888, 0, 0.0149394
 player_path = NodePath("../../Player")
 
 [node name="Demon7" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -45.3504, 7.17764, 37.015)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -45.3504, 5.44882, 37.015)
 player_path = NodePath("../../Player")
 
 [node name="Demon8" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -45.3504, 7.17764, -7.98496)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -45.3504, 6.5024, -7.98496)
 player_path = NodePath("../../Player")
 
 [node name="Demon10" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -37.0714, 17.5337, -43.5474)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -37.0714, 17.0519, -43.5474)
 player_path = NodePath("../../Player")
 
 [node name="Demon11" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -50.2881, 12.7223, -87.0364)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -50.2881, 11.8518, -87.0364)
 player_path = NodePath("../../Player")
 
 [node name="Demon12" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -52.7502, 11.7207, -65.0946)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -52.7502, 11.6149, -65.0946)
 player_path = NodePath("../../Player")
 
 [node name="Demon9" parent="monster_level4" instance=ExtResource("42_vbuxn")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.7223, 13.057, 18.6715)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.7223, 11.5337, 18.6715)
 player_path = NodePath("../../Player")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
@@ -1575,7 +1575,7 @@ transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 34.7758, 17.0142, -100.219)
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 49.1544, 11.4984, -59.957)
 
 [node name="metalGate2" parent="." instance=ExtResource("35_3ipbc")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 39.1703, 22.0034, -177.164)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 39.1703, 23.7842, -177.164)
 
 [node name="Stair2" parent="." instance=ExtResource("16_pggwm")]
 transform = Transform3D(-2.62268e-07, 0, -3, 0, 2, 0, 6, 0, -1.31134e-07, 40.1717, 16.6033, -162.309)
@@ -1621,7 +1621,7 @@ offset_right = 1155.0
 offset_bottom = 318.0
 theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(0.991164, 0.991164, 0.991164, 1)
-text = "Wait, why is King ?
+text = "Wait, where is King ?
 Where's my magic key?!"
 horizontal_alignment = 1
 
@@ -1662,9 +1662,30 @@ transform = Transform3D(1, 0, -2.84217e-14, 0, 1, 0, 0, 0, 1, 4.39056, 0, -5.329
 shape = SubResource("BoxShape3D_nbg66")
 
 [node name="Label3D" type="Label3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.08852, 102.085)
-text = "11111"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.60468, 97.4071)
+text = "While walking through the portal with the king, 
+he beats you unconscious to grab the magic key 
+and run back to the castle. 
+Kill the betrayer to retake the key."
 font_size = 100
+
+[node name="stop2" parent="." instance=ExtResource("32_bv5c2")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 34.7565, 4, 48)
+
+[node name="Label3D" type="Label3D" parent="stop2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0072, 0)
+text = "Attention!
+Powerful flying guards ahead.
+Dead if spotted."
+
+[node name="stop3" parent="." instance=ExtResource("32_bv5c2")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -27.7681, 4, 48)
+
+[node name="Label3D" type="Label3D" parent="stop3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0072, 0)
+text = "Attention!
+Powerful flying guards ahead.
+Dead if spotted."
 
 [connection signal="player_hit" from="Player" to="." method="_on_player_player_hit"]
 [connection signal="player_hit2" from="Player" to="." method="_on_player_player_hit_2"]

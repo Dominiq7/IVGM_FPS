@@ -8,8 +8,6 @@ const SPEED = 4.5
 const ATTACK_RANGE = 2.0
 const RUN_RANGE = 10.0
 
-signal monster_hit
-
 @export var player_path :NodePath # change it to your level player
 
 @onready var nav_agent = $NavigationAgent3D
@@ -52,19 +50,18 @@ func _process(delta):
 		anim_tree.set("parameters/conditions/Run", false)
 		anim_tree.set("parameters/conditions/Idle", true)
 
-func _hit_finished():
+func _attack_animation_finished():
 	if global_position.distance_to(player.global_position) < ATTACK_RANGE + 1.0:
 		var dir = global_position.direction_to(player.global_position)
+		dir.y = dir.y - 1
 		player.hit(dir)
 
 func _target_in_range():
 	return global_position.distance_to(player.global_position) < ATTACK_RANGE
-
-
-func _on_animation_tree_animation_finished(anim_name):
-	print("IN FUNC")
 	
-	if anim_name == "Attack":
-		if global_position.distance_to(player.global_position) < ATTACK_RANGE + 1.0:
-			var dir = global_position.direction_to(player.global_position)
-			player.hit(dir)
+func hit():
+	health -= 1
+	if health <= 0:
+		anim_tree.set("parameters/conditions/Die", true)
+		await get_tree().create_timer(2.0833).timeout
+		queue_free()

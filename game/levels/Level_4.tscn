@@ -1603,7 +1603,7 @@ visible = false
 top_level = true
 layout_mode = 0
 offset_top = 233.0
-offset_right = 1156.0
+offset_right = 1921.0
 offset_bottom = 317.0
 theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(0.992157, 0.992157, 0.992157, 1)
@@ -1617,7 +1617,7 @@ top_level = true
 layout_mode = 0
 offset_left = -1.0
 offset_top = 234.0
-offset_right = 1155.0
+offset_right = 1931.0
 offset_bottom = 318.0
 theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(0.991164, 0.991164, 0.991164, 1)
@@ -1630,7 +1630,7 @@ visible = false
 top_level = true
 layout_mode = 0
 offset_top = 233.0
-offset_right = 1156.0
+offset_right = 1927.0
 offset_bottom = 317.0
 theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(0.991164, 0.991164, 0.991164, 1)
@@ -1643,7 +1643,7 @@ visible = false
 top_level = true
 layout_mode = 0
 offset_top = 230.0
-offset_right = 1156.0
+offset_right = 1929.0
 offset_bottom = 314.0
 theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
@@ -1659,6 +1659,7 @@ collision_mask = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, -2.84217e-14, 0, 1, 0, 0, 0, 1, 4.39056, 0, -5.32968)
+visible = false
 shape = SubResource("BoxShape3D_nbg66")
 
 [node name="Label3D" type="Label3D" parent="."]

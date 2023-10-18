@@ -2869,4 +2869,5 @@ transform = Transform3D(10, 0, 1.13687e-13, 0, 10, 0, -1.13687e-13, 0, 10, 0, 10
 shape = SubResource("CylinderShape3D_revu1")
 
 [node name="StartLevelTimer" type="Timer" parent="."]
+wait_time = 3.0
 one_shot = true

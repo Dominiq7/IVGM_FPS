@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bitxjfyyo2gyr"
+path="res://.godot/imported/fence_simpleDiagonal.obj-02e06664b5e05852f9bd23ed1e55b692.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_simpleDiagonal.obj-02e06664b5e05852f9bd23ed1e55b692.mesh"]
+
+source_file="res://addons/kenney_textures/fence_simpleDiagonal.obj"
+dest_files=["res://.godot/imported/fence_simpleDiagonal.obj-02e06664b5e05852f9bd23ed1e55b692.mesh", "res://.godot/imported/fence_simpleDiagonal.obj-02e06664b5e05852f9bd23ed1e55b692.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

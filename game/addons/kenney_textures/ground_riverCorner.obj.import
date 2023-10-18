@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcckavc0amnwu"
+path="res://.godot/imported/ground_riverCorner.obj-c934b7d7f8667ea120b0c3c9e0f8e21a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_riverCorner.obj-c934b7d7f8667ea120b0c3c9e0f8e21a.mesh"]
+
+source_file="res://addons/kenney_textures/ground_riverCorner.obj"
+dest_files=["res://.godot/imported/ground_riverCorner.obj-c934b7d7f8667ea120b0c3c9e0f8e21a.mesh", "res://.godot/imported/ground_riverCorner.obj-c934b7d7f8667ea120b0c3c9e0f8e21a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

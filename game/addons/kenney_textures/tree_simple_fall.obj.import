@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bohhxmvqlnmco"
+path="res://.godot/imported/tree_simple_fall.obj-1ab74742159e51a837d126b94ee616e9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_simple_fall.obj-1ab74742159e51a837d126b94ee616e9.mesh"]
+
+source_file="res://addons/kenney_textures/tree_simple_fall.obj"
+dest_files=["res://.godot/imported/tree_simple_fall.obj-1ab74742159e51a837d126b94ee616e9.mesh", "res://.godot/imported/tree_simple_fall.obj-1ab74742159e51a837d126b94ee616e9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

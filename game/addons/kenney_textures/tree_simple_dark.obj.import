@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c0l3urafh3ehv"
+path="res://.godot/imported/tree_simple_dark.obj-efd3096c1f6ac79ac5aa5b06baa3d4e9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_simple_dark.obj-efd3096c1f6ac79ac5aa5b06baa3d4e9.mesh"]
+
+source_file="res://addons/kenney_textures/tree_simple_dark.obj"
+dest_files=["res://.godot/imported/tree_simple_dark.obj-efd3096c1f6ac79ac5aa5b06baa3d4e9.mesh", "res://.godot/imported/tree_simple_dark.obj-efd3096c1f6ac79ac5aa5b06baa3d4e9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

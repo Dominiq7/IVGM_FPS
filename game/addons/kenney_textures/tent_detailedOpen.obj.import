@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpucni6ywc2ia"
+path="res://.godot/imported/tent_detailedOpen.obj-279fc3e787c5baf194a3667bc8a64b10.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tent_detailedOpen.obj-279fc3e787c5baf194a3667bc8a64b10.mesh"]
+
+source_file="res://addons/kenney_textures/tent_detailedOpen.obj"
+dest_files=["res://.godot/imported/tent_detailedOpen.obj-279fc3e787c5baf194a3667bc8a64b10.mesh", "res://.godot/imported/tent_detailedOpen.obj-279fc3e787c5baf194a3667bc8a64b10.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crgsslimlclub"
+path="res://.godot/imported/cliff_stepsCorner_stone.obj-5680c0d657664e3c5c76e886644067eb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_stepsCorner_stone.obj-5680c0d657664e3c5c76e886644067eb.mesh"]
+
+source_file="res://addons/kenney_textures/cliff_stepsCorner_stone.obj"
+dest_files=["res://.godot/imported/cliff_stepsCorner_stone.obj-5680c0d657664e3c5c76e886644067eb.mesh", "res://.godot/imported/cliff_stepsCorner_stone.obj-5680c0d657664e3c5c76e886644067eb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

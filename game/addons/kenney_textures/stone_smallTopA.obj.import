@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmtkfxthk5nmv"
+path="res://.godot/imported/stone_smallTopA.obj-6d149c09b1847ed066efed6f1a6c220f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone_smallTopA.obj-6d149c09b1847ed066efed6f1a6c220f.mesh"]
+
+source_file="res://addons/kenney_textures/stone_smallTopA.obj"
+dest_files=["res://.godot/imported/stone_smallTopA.obj-6d149c09b1847ed066efed6f1a6c220f.mesh", "res://.godot/imported/stone_smallTopA.obj-6d149c09b1847ed066efed6f1a6c220f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

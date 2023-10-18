@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dbx1qrtcpki7d"
+path="res://.godot/imported/log.obj-782c2f21fbe3f682672eed300b5fb53a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/log.obj-782c2f21fbe3f682672eed300b5fb53a.mesh"]
+
+source_file="res://addons/kenney_textures/log.obj"
+dest_files=["res://.godot/imported/log.obj-782c2f21fbe3f682672eed300b5fb53a.mesh", "res://.godot/imported/log.obj-782c2f21fbe3f682672eed300b5fb53a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

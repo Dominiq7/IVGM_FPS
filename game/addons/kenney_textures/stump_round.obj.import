@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cgg34dsi183y4"
+path="res://.godot/imported/stump_round.obj-e8a3efd2f34b87f4b1d27dd03abf6589.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stump_round.obj-e8a3efd2f34b87f4b1d27dd03abf6589.mesh"]
+
+source_file="res://addons/kenney_textures/stump_round.obj"
+dest_files=["res://.godot/imported/stump_round.obj-e8a3efd2f34b87f4b1d27dd03abf6589.mesh", "res://.godot/imported/stump_round.obj-e8a3efd2f34b87f4b1d27dd03abf6589.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

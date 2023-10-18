@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://patkcgm5s5gt"
+path="res://.godot/imported/log_stack.obj-4cdf51090b2c10320cc7a9085d8dbdfd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/log_stack.obj-4cdf51090b2c10320cc7a9085d8dbdfd.mesh"]
+
+source_file="res://addons/kenney_textures/log_stack.obj"
+dest_files=["res://.godot/imported/log_stack.obj-4cdf51090b2c10320cc7a9085d8dbdfd.mesh", "res://.godot/imported/log_stack.obj-4cdf51090b2c10320cc7a9085d8dbdfd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

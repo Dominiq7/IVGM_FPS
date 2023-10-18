@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwptuqg434yhh"
+path="res://.godot/imported/pot_small.obj-5ff8d82db694d4ceeb5595781339afc6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pot_small.obj-5ff8d82db694d4ceeb5595781339afc6.mesh"]
+
+source_file="res://addons/kenney_textures/pot_small.obj"
+dest_files=["res://.godot/imported/pot_small.obj-5ff8d82db694d4ceeb5595781339afc6.mesh", "res://.godot/imported/pot_small.obj-5ff8d82db694d4ceeb5595781339afc6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

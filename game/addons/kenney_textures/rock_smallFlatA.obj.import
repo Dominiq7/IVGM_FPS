@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crghb6xn045tg"
+path="res://.godot/imported/rock_smallFlatA.obj-5f29a6042ecff6f9a4601368d2f5a3e8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_smallFlatA.obj-5f29a6042ecff6f9a4601368d2f5a3e8.mesh"]
+
+source_file="res://addons/kenney_textures/rock_smallFlatA.obj"
+dest_files=["res://.godot/imported/rock_smallFlatA.obj-5f29a6042ecff6f9a4601368d2f5a3e8.mesh", "res://.godot/imported/rock_smallFlatA.obj-5f29a6042ecff6f9a4601368d2f5a3e8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

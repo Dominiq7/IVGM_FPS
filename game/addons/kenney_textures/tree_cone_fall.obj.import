@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctt3v6gkdvs1b"
+path="res://.godot/imported/tree_cone_fall.obj-8ac8baf8ebd922ba6cdd1bd85851a938.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_cone_fall.obj-8ac8baf8ebd922ba6cdd1bd85851a938.mesh"]
+
+source_file="res://addons/kenney_textures/tree_cone_fall.obj"
+dest_files=["res://.godot/imported/tree_cone_fall.obj-8ac8baf8ebd922ba6cdd1bd85851a938.mesh", "res://.godot/imported/tree_cone_fall.obj-8ac8baf8ebd922ba6cdd1bd85851a938.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dimq30kiuu5j8"
+path="res://.godot/imported/crops_dirtRow.obj-d3fe8edda1864c21ad639282d49de26a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crops_dirtRow.obj-d3fe8edda1864c21ad639282d49de26a.mesh"]
+
+source_file="res://addons/kenney_textures/crops_dirtRow.obj"
+dest_files=["res://.godot/imported/crops_dirtRow.obj-d3fe8edda1864c21ad639282d49de26a.mesh", "res://.godot/imported/crops_dirtRow.obj-d3fe8edda1864c21ad639282d49de26a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

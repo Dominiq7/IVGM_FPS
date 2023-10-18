@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhv4jr5xh7tcj"
+path="res://.godot/imported/mushroom_tan.obj-d6e225c6012fa5d5505d7445e0bdf7f5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mushroom_tan.obj-d6e225c6012fa5d5505d7445e0bdf7f5.mesh"]
+
+source_file="res://addons/kenney_textures/mushroom_tan.obj"
+dest_files=["res://.godot/imported/mushroom_tan.obj-d6e225c6012fa5d5505d7445e0bdf7f5.mesh", "res://.godot/imported/mushroom_tan.obj-d6e225c6012fa5d5505d7445e0bdf7f5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

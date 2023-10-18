@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://daedyawsa1d5t"
+path="res://.godot/imported/flower_purpleB.obj-2a4eace079c15cadfde47fbe26396c13.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flower_purpleB.obj-2a4eace079c15cadfde47fbe26396c13.mesh"]
+
+source_file="res://addons/kenney_textures/flower_purpleB.obj"
+dest_files=["res://.godot/imported/flower_purpleB.obj-2a4eace079c15cadfde47fbe26396c13.mesh", "res://.godot/imported/flower_purpleB.obj-2a4eace079c15cadfde47fbe26396c13.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

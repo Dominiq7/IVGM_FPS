@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkpfgoelv4kbh"]
+
+[ext_resource type="ArrayMesh" uid="uid://dbx1qrtcpki7d" path="res://addons/kenney_textures/log.obj" id="1_3pqek"]
+[ext_resource type="Script" path="res://Scenes/Level_5/fallen_log.gd" id="1_obysl"]
+[ext_resource type="ArrayMesh" uid="uid://mmxf5lgac6g2" path="res://addons/kenney_textures/stump_old.obj" id="2_ggtrp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iejrw"]
+size = Vector3(0.3, 0.7, 0.8)
+
+[node name="FallenLog" type="StaticBody3D" groups=["Liftable"]]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_obysl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+shape = SubResource("BoxShape3D_iejrw")
+
+[node name="Log" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_3pqek")
+
+[node name="LogPiece1" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.7, 0, 0, 0, -0.196596, 0.671826, 0, -0.671826, -0.196596, 0, 0.124361, 0.377695)
+mesh = ExtResource("2_ggtrp")
+
+[node name="LogPiece2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.452662, 0, 0.21236, 0, 0.5, 0, -0.21236, 0, 0.452662, 0, 0.132889, 0.157752)
+mesh = ExtResource("1_3pqek")
+
+[node name="LogPiece5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.484849, 0, 0.122154, 0, 0.5, 0, -0.122154, 0, 0.484849, -0.0193301, 0.0545479, -0.175999)
+mesh = ExtResource("1_3pqek")
+
+[node name="LogPiece6" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.484849, 0, 0.122154, 0, 0.5, 0, -0.122154, 0, 0.484849, 0.0022468, 0.0397968, 0.142649)
+mesh = ExtResource("1_3pqek")
+
+[node name="LogPiece7" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.497454, 0, 0.0503892, 0, 0.5, 0, -0.0503892, 0, 0.497454, -0.0560216, 0.0251206, 0.070681)
+mesh = ExtResource("1_3pqek")
+
+[node name="LogPiece3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.495821, 0, 0.0645103, 0, 0.5, 0, -0.0645103, 0, 0.495821, 0, 0.0817544, 0.0198363)
+mesh = ExtResource("1_3pqek")
+
+[node name="LogPiece4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.495821, 0, 0.0645103, 0, 0.5, 0, -0.0645103, 0, 0.495821, 0, 0.115009, -0.185113)
+mesh = ExtResource("1_3pqek")
+
+[node name="BreakLogTimer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[connection signal="timeout" from="BreakLogTimer" to="." method="_on_break_log_timer_timeout"]

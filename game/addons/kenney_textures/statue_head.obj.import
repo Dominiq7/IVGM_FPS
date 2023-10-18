@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://gc7f25ut4gg5"
+path="res://.godot/imported/statue_head.obj-f89fc1bf04e27aac1fab8dc1dd67f82f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/statue_head.obj-f89fc1bf04e27aac1fab8dc1dd67f82f.mesh"]
+
+source_file="res://addons/kenney_textures/statue_head.obj"
+dest_files=["res://.godot/imported/statue_head.obj-f89fc1bf04e27aac1fab8dc1dd67f82f.mesh", "res://.godot/imported/statue_head.obj-f89fc1bf04e27aac1fab8dc1dd67f82f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

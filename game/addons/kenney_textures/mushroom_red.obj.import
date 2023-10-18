@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq8c2hgp1muha"
+path="res://.godot/imported/mushroom_red.obj-c7427204aac9c87d626f0b0125abf1f6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mushroom_red.obj-c7427204aac9c87d626f0b0125abf1f6.mesh"]
+
+source_file="res://addons/kenney_textures/mushroom_red.obj"
+dest_files=["res://.godot/imported/mushroom_red.obj-c7427204aac9c87d626f0b0125abf1f6.mesh", "res://.godot/imported/mushroom_red.obj-c7427204aac9c87d626f0b0125abf1f6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

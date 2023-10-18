@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c8egrp6ni46n3"
+path="res://.godot/imported/stone_largeE.obj-1bbbcf90b63d27f31fd3c31c9f0f80cd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone_largeE.obj-1bbbcf90b63d27f31fd3c31c9f0f80cd.mesh"]
+
+source_file="res://addons/kenney_textures/stone_largeE.obj"
+dest_files=["res://.godot/imported/stone_largeE.obj-1bbbcf90b63d27f31fd3c31c9f0f80cd.mesh", "res://.godot/imported/stone_largeE.obj-1bbbcf90b63d27f31fd3c31c9f0f80cd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs5ej0pfrwfa8"]
+
+[ext_resource type="ArrayMesh" uid="uid://dimq30kiuu5j8" path="res://addons/kenney_textures/crops_dirtRow.obj" id="1_kxaql"]
+
+[node name="RiverBedFloor" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_kxaql")

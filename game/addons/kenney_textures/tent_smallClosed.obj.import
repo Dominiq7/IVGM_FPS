@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cageppne6eqg8"
+path="res://.godot/imported/tent_smallClosed.obj-95302c91550cf52ee083da75a68c9920.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tent_smallClosed.obj-95302c91550cf52ee083da75a68c9920.mesh"]
+
+source_file="res://addons/kenney_textures/tent_smallClosed.obj"
+dest_files=["res://.godot/imported/tent_smallClosed.obj-95302c91550cf52ee083da75a68c9920.mesh", "res://.godot/imported/tent_smallClosed.obj-95302c91550cf52ee083da75a68c9920.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

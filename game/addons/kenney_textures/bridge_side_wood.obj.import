@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bimrarbtve5eb"
+path="res://.godot/imported/bridge_side_wood.obj-3f5b4168a1bdfb9214939266c49b2828.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bridge_side_wood.obj-3f5b4168a1bdfb9214939266c49b2828.mesh"]
+
+source_file="res://addons/kenney_textures/bridge_side_wood.obj"
+dest_files=["res://.godot/imported/bridge_side_wood.obj-3f5b4168a1bdfb9214939266c49b2828.mesh", "res://.godot/imported/bridge_side_wood.obj-3f5b4168a1bdfb9214939266c49b2828.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

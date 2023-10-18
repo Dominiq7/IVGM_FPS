@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d4gld574lafd0"
+path="res://.godot/imported/rock_smallC.obj-ce76cdb7899492c021ed7e47bd5a5c53.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_smallC.obj-ce76cdb7899492c021ed7e47bd5a5c53.mesh"]
+
+source_file="res://addons/kenney_textures/rock_smallC.obj"
+dest_files=["res://.godot/imported/rock_smallC.obj-ce76cdb7899492c021ed7e47bd5a5c53.mesh", "res://.godot/imported/rock_smallC.obj-ce76cdb7899492c021ed7e47bd5a5c53.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

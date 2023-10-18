@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c40punnipbd7g"
+path="res://.godot/imported/stone_smallFlatA.obj-101b60cd8f82fcdcff2d8f2397888815.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone_smallFlatA.obj-101b60cd8f82fcdcff2d8f2397888815.mesh"]
+
+source_file="res://addons/kenney_textures/stone_smallFlatA.obj"
+dest_files=["res://.godot/imported/stone_smallFlatA.obj-101b60cd8f82fcdcff2d8f2397888815.mesh", "res://.godot/imported/stone_smallFlatA.obj-101b60cd8f82fcdcff2d8f2397888815.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

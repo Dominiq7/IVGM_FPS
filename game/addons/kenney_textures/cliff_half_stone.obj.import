@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpfewkehkbdfg"
+path="res://.godot/imported/cliff_half_stone.obj-2cb828a3048576031d5677ab0f4a71d6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_half_stone.obj-2cb828a3048576031d5677ab0f4a71d6.mesh"]
+
+source_file="res://addons/kenney_textures/cliff_half_stone.obj"
+dest_files=["res://.godot/imported/cliff_half_stone.obj-2cb828a3048576031d5677ab0f4a71d6.mesh", "res://.godot/imported/cliff_half_stone.obj-2cb828a3048576031d5677ab0f4a71d6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

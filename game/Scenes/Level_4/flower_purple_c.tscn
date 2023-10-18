@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvmcexcoaojhn"]
+
+[ext_resource type="PackedScene" uid="uid://bgxcqbd65mp4i" path="res://addons/kenney_nature-kit/flower_purpleC.glb" id="1_0f4ml"]
+
+[node name="flower_purpleC" instance=ExtResource("1_0f4ml")]

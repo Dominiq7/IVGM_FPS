@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://u5oxj6ny74qr"]
+
+[ext_resource type="PackedScene" uid="uid://cusb0clqqd5fu" path="res://Scenes/Level_4/fountainSquareDetail.glb" id="1_21cv4"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nara7"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.0559593, -1, 1, 0, -1, -1, 0.0559593, 1, 1, 0, 1, -1, 0.279984, -0.962608, -0.962608, 0.279984, -1, 1, 0.0559593, -1, -1, 0.279984, 0.962412, -0.962608, 0.279984, 1, 1, 0.0559593, 1, -0.275059, 0.48, -0.275059, 0.962412, 0.279984, -1, 1, 0.279984, -0.962608, -0.275059, 0.48, 0.274863, 0.962412, 0.279984, 1, 1, 0.279984, 0.962412, 0.274863, 0.48, -0.275059, 0.274863, 0.48, 0.274863)
+
+[node name="fountainSquareDetail" instance=ExtResource("1_21cv4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_nara7")

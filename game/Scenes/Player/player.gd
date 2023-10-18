@@ -5,6 +5,7 @@ extends CharacterBody3D
 @onready var gun_anim =$Head/Camera3d/wand/AnimationPlayer
 @onready var gun_barrel = $Head/Camera3d/wand/RayCast3D
 
+
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 10.0
 const JUMP_VELOCITY = 4.5
@@ -19,6 +20,7 @@ var speed = WALK_SPEED
 signal player_hit
 signal player_hit2
 signal player_hit_ghost
+signal player_hit3
 
 # Bullets
 var bullet = load("res://Scenes/Bullet/Bullet.tscn")
@@ -134,6 +136,8 @@ func hit(dir):# player is attacked by melee enemy
 func hit2():# player is attacked by ranged enemy
 	emit_signal("player_hit2")
 	
+func hit3():# player is attacked by ranged enemy
+	emit_signal("player_hit3")
 		
 ################################################################################
 #new function: Player died, u can call this func to make new condition/function to make the player dies like Leaving the designated zone
@@ -141,3 +145,5 @@ func playerDied():
 	get_tree().reload_current_scene()
 ################################################################################
 	
+
+

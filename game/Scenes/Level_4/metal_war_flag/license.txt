@@ -1,0 +1,11 @@
+Model Information:
+* title:	Metal War Flag
+* source:	https://sketchfab.com/3d-models/metal-war-flag-71e06deac9ee4b6f9c833da22877c5c9
+* author:	BlendWith1 (https://sketchfab.com/BlendWith1)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Metal War Flag" (https://sketchfab.com/3d-models/metal-war-flag-71e06deac9ee4b6f9c833da22877c5c9) by BlendWith1 (https://sketchfab.com/BlendWith1) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

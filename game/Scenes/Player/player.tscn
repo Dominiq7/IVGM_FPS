@@ -138,3 +138,4 @@ text = "Health"
 
 [connection signal="player_hit" from="." to="healthbar/Control/ProgressBar" method="_on_player_player_hit"]
 [connection signal="player_hit2" from="." to="healthbar/Control/ProgressBar" method="_on_player_player_hit_2"]
+[connection signal="player_hit3" from="." to="healthbar/Control/ProgressBar" method="_on_player_player_hit_3"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvfq0vbealmge"
+path="res://.godot/imported/character-human.obj-2e39b02a72889c598c46969ab5716f9b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-human.obj-2e39b02a72889c598c46969ab5716f9b.mesh"]
+
+source_file="res://textures/Dungeon OBJ/character-human.obj"
+dest_files=["res://.godot/imported/character-human.obj-2e39b02a72889c598c46969ab5716f9b.mesh", "res://.godot/imported/character-human.obj-2e39b02a72889c598c46969ab5716f9b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

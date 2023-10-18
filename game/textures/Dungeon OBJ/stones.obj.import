@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhx511j83fnfb"
+path="res://.godot/imported/stones.obj-49eed77c4b3cd2a20b182c699361f172.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stones.obj-49eed77c4b3cd2a20b182c699361f172.mesh"]
+
+source_file="res://textures/Dungeon OBJ/stones.obj"
+dest_files=["res://.godot/imported/stones.obj-49eed77c4b3cd2a20b182c699361f172.mesh", "res://.godot/imported/stones.obj-49eed77c4b3cd2a20b182c699361f172.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

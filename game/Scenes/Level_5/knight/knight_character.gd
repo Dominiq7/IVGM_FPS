@@ -4,38 +4,36 @@ var player = null
 var state_machine
 var health = 4
 
-const SPEED = 4.5
+const SPEED = 6
 const ATTACK_RANGE = 2.0
-const RUN_RANGE = 10.0
+const RUN_RANGE = 15.0
 
 @export var player_path :NodePath # change it to your level player
 
 @onready var nav_agent = $NavigationAgent3D
 @onready var anim_tree = $AnimationTree
+@onready var start_timer = $StartLevelTimer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	player = get_node(player_path)
 	state_machine = anim_tree.get("parameters/playback")
+	start_timer.start()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
-	if global_position.distance_to(player.global_position) < RUN_RANGE:
+	if global_position.distance_to(player.global_position) < RUN_RANGE && start_timer.is_stopped():
 		
 		velocity = Vector3.ZERO
 		match state_machine.get_current_node():
 			"Run":
-				# Navigation
-				var playerPos = player.global_transform.origin
-				playerPos.y = global_position.y
 				
-				nav_agent.set_target_position(Vector3(playerPos.x, global_position.y, playerPos.z))
+				# Navigation
+				nav_agent.set_target_position(player.global_transform.origin)
 				var next_nav_point = nav_agent.get_next_path_position()
 				velocity = (next_nav_point - global_transform.origin).normalized() * SPEED
 				rotation.y = lerp_angle(rotation.y, atan2(-velocity.x, -velocity.z), delta * 10.0)
-			
 			"Attack":
 				look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
 		

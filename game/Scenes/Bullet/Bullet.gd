@@ -11,18 +11,17 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	position += transform.basis * Vector3(0, SPEED, 0) * delta
+	
 	if ray.is_colliding():
 		mesh.visible = false
 		particles.emitting = true
 		ray.enabled = false
-		print(ray.get_collider())
-		if ray.get_collider().is_in_group("enemy"):
+		if ray.get_collider() != null && ray.get_collider().is_in_group("enemy"):
 			ray.get_collider().hit()
 		await get_tree().create_timer(1.0).timeout
 		queue_free()
-
 
 func _on_timer_timeout():
 	queue_free()

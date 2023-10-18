@@ -4,7 +4,7 @@ var player = null
 var state_machine
 var health = 4
 
-const SPEED = 5
+const SPEED = 5.5
 const ATTACK_RANGE = 2.0
 const RUN_RANGE = 15.0
 

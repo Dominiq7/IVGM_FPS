@@ -18,6 +18,7 @@ var speed = WALK_SPEED
 # signal
 signal player_hit
 signal player_hit2
+signal player_hit_ghost
 
 # Bullets
 var bullet = load("res://Scenes/Bullet/Bullet.tscn")
@@ -132,7 +133,7 @@ func hit(dir):# player is attacked by melee enemy
 		
 func hit2():# player is attacked by ranged enemy
 	emit_signal("player_hit2")
-
+	
 		
 ################################################################################
 #new function: Player died, u can call this func to make new condition/function to make the player dies like Leaving the designated zone

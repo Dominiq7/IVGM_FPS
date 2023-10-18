@@ -1039,3 +1039,8 @@ transform = Transform3D(1, 1.49012e-08, 1.49012e-08, -1.86265e-09, 1, 9.31323e-1
 
 [node name="bridgeRamp8" parent="bridgeRamp5" instance=ExtResource("8_cpwkm")]
 transform = Transform3D(1, 1.49012e-08, 1.49012e-08, -1.86265e-09, 1, 9.31323e-10, 0, -1.44355e-08, 1, 0.00874329, 0.862659, 1.62964)
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.3389, 2.57831, -58.9943)
+text = "Great Wizard the world thanks you for coming to the aid of the King. 
+Free him destroy his captors and go through the portal to his Grand Castle. "

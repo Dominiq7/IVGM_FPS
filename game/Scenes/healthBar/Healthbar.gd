@@ -36,3 +36,9 @@ func _on_player_player_hit_2():
   health -= 1
   update_health_ui() 
   if health < 0 :get_tree().reload_current_scene()
+
+
+func _on_player_player_hit_3():	
+  health -= 1000
+  update_health_ui() 
+  if health < 0 :get_tree().reload_current_scene()

@@ -9,7 +9,7 @@ var speed = 3
 
 
 
-const ATTACK_RANGE = 20.0
+const ATTACK_RANGE = 5.0
 
 signal monster_hit
 
@@ -17,7 +17,7 @@ signal monster_hit
 @onready var anim_tree = $AnimationTree
 @onready var enemy_barrel = $RayCast3D
 #@onready var spotlight = $SpotLight3D
-@onready var pathfollow = get_parent()
+
 
 # Bullets
 var bullet3 = load("res://Scenes/Bullet/Bullet3.tscn")
@@ -34,10 +34,10 @@ func _process(delta):
 	
 		match state_machine.get_current_node():
 			"Fast_Flying":
-				_patrol(delta)
+				pass
 				
 			"HitReact":
-#				look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
+				look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
 				# Handle Shooting
 				instance = bullet3.instantiate()
 				instance.position = enemy_barrel.global_position
@@ -51,10 +51,9 @@ func _process(delta):
 		anim_tree.set("parameters/conditions/attack3", _target_in_range())
 		anim_tree.set("parameters/conditions/stay3", !_target_in_range())
 		
-#		move_and_slide()
+		move_and_slide()
 		
-func _patrol(delta):
-	pathfollow.progress += speed * delta	
+
 	
 	
 	

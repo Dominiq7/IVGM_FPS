@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://2waanm5hyuqy"
+path="res://.godot/imported/wood-support.obj-db1ac7c1b1a3e34e306fcd138f6a365a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wood-support.obj-db1ac7c1b1a3e34e306fcd138f6a365a.mesh"]
+
+source_file="res://textures/Dungeon OBJ/wood-support.obj"
+dest_files=["res://.godot/imported/wood-support.obj-db1ac7c1b1a3e34e306fcd138f6a365a.mesh", "res://.godot/imported/wood-support.obj-db1ac7c1b1a3e34e306fcd138f6a365a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

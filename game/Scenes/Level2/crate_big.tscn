@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dofhp3sv5p37p"]
+
+[ext_resource type="Script" path="res://Scenes/MovableObjects/crate.gd" id="1_147ah"]
+[ext_resource type="ArrayMesh" uid="uid://c5q4w71lslwgj" path="res://addons/kenney_textures/crate.obj" id="2_bem6e"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p43m8"]
+points = PackedVector3Array(0.25, 0.5, 0.25, 0.25, -8.72298e-32, 0.25, 0.25, 0.5, -0.25, -0.25, 0.5, 0.25, 0.25, -8.72298e-32, -0.25, -0.25, -8.72298e-32, 0.25, -0.25, 0.5, -0.25, -0.25, -8.72298e-32, -0.25)
+
+[node name="Crate" type="RigidBody3D"]
+gravity_scale = 0.0
+script = ExtResource("1_147ah")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, -0.5, 0)
+mesh = ExtResource("2_bem6e")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, -0.5, 0)
+shape = SubResource("ConvexPolygonShape3D_p43m8")
+
+[node name="LiftTimer" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="timeout" from="LiftTimer" to="." method="_on_lift_timer_timeout"]

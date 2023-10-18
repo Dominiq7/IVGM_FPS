@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwjpo5gbdtd4e"]
+
+[ext_resource type="PackedScene" uid="uid://b2jixmvkucvkb" path="res://textures/torch/scene.gltf" id="1_u20ub"]
+[ext_resource type="Script" path="res://Scenes/torch.gd" id="2_01riy"]
+
+[node name="scene" instance=ExtResource("1_u20ub")]
+script = ExtResource("2_01riy")
